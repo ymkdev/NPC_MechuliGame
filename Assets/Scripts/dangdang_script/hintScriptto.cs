@@ -19,7 +19,11 @@ public class hintScriptto : MonoBehaviour
     void gotoAnotherScene()
     {
         //if (Input.GetMouseButtonDown(0))
+
         SceneManager.LoadScene("dangdang_hintAnddialogue1");
+
+        SceneManager.LoadScene("dialoggue 1");
+
     }
 
     // Update is called once per frame
