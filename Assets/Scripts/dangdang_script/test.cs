@@ -69,7 +69,7 @@ public class test : MonoBehaviour
     void gotoScene()
     {
         //SceneManager.LoadScene("MainScene");
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene("MainScene");
     }
     // Update is called once per frame
     void Update()
@@ -81,7 +81,7 @@ public class test : MonoBehaviour
                 Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Collider2D hitCollider = Physics2D.OverlapPoint(clickPosition);
 
-                // Æ¯Á¤ Collider2D¸¦ Å¬¸¯ÇÑ °æ¿ì¿¡¸¸ ´ÙÀ½ ´ëÈ­·Î ³Ñ¾î°©´Ï´Ù.
+                // íŠ¹ì • Collider2Dë¥¼ í´ë¦­í•œ ê²½ìš°ì—ë§Œ ë‹¤ìŒ ëŒ€í™”ë¡œ ë„˜ì–´ê°‘ë‹ˆë‹¤.
                 if (hitCollider != null)
                 {
                     if (count_dia < dialogue.Length)
