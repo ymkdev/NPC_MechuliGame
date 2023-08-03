@@ -9,7 +9,11 @@ public class GameMethod : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
+
             SceneManager.LoadScene("dangdang_MainScene");
+
+            SceneManager.LoadScene("MainScene");
+
 
     }
 }

@@ -63,7 +63,7 @@ public class HomesManager : MonoBehaviour
                         SceneManager.LoadScene("tori_Intro");
 
                     else if (selectedOption_home == 2)
-                        SceneManager.LoadScene("MainScene");
+                        SceneManager.LoadScene("frog_MainScene");
 
                     else if (selectedOption_home == 4)
                         SceneManager.LoadScene("dangdang_dialogue");
