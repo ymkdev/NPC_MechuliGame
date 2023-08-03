@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/frog/MainScene.unity
+    path: Assets/Scenes/frog/frog_MainScene.unity
     guid: b2bc40e029b04324e856b950b309acf4
   - enabled: 1
     path: Assets/Scenes/tori/tori_Intro.unity
