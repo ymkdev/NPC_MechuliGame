@@ -65,6 +65,8 @@ public class HomesManager : MonoBehaviour
                     else if (selectedOption_home == 2)
                         SceneManager.LoadScene("MainScene");
 
+                    else if (selectedOption_home == 4)
+                        SceneManager.LoadScene("dangdang_dialogue");
                     else if(selectedOption_home == 5)
                         SceneManager.LoadScene("tori_Intro");
                     else if (selectedOption_home == 1)
