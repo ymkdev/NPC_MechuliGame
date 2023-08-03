@@ -24,7 +24,7 @@ public class GameOVer : MonoBehaviour
                 if (click_obj.name == "FailOk") //다시하기
                 {
                     Debug.Log(click_obj.name);
-                    SceneManager.LoadScene("SampleScene"); //게임 첫 화면으로..
+                    SceneManager.LoadScene("SampleScene_Mieu"); //게임 첫 화면으로..
                 }
               
             }

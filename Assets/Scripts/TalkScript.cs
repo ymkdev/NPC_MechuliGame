@@ -87,6 +87,6 @@ public class TalkScript : MonoBehaviour
 
     public void yesBtn()
     {
-        SceneManager.LoadScene("HowTo");
+        SceneManager.LoadScene("HowTo_Mieu");
     }
 }

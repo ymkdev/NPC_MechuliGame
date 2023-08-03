@@ -24,7 +24,7 @@ public class HowTo : MonoBehaviour
                 if (click_obj.name == "Image")
                 {
                     Debug.Log(click_obj.name);
-                    SceneManager.LoadScene("SampleScene"); //게임창으로 이동
+                    SceneManager.LoadScene("SampleScene_Mieu"); //게임창으로 이동
                 }
 
             }

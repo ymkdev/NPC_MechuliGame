@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     }
     public void ReturnStage() 
     {
-        SceneManager.LoadScene("GameOver"); //실패 화면으로 이동
+        SceneManager.LoadScene("GameOver_Mieu"); //실패 화면으로 이동
     }
 
     public void NextHint()
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         button3.SetActive(false);
         Stages[stageIndex].SetActive(false);
 
-        SceneManager.LoadScene("Hint"); //힌트창으로 이동
+        SceneManager.LoadScene("Hint_Mieu"); //힌트창으로 이동
     }
 
 
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
         {
             if ((int)GameTime1 == 0) //1라운드 실패
             {
-                SceneManager.LoadScene("GameOver"); //실패 화면으로 전환
+                SceneManager.LoadScene("GameOver_Mieu"); //실패 화면으로 전환
             }
             else //시간 흐르게...
             {
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         {
             if ((int)GameTime2 == 0) //2라운드 실패
             {
-                SceneManager.LoadScene("GameOver"); //실패 화면으로 전환          
+                SceneManager.LoadScene("GameOver_Mieu"); //실패 화면으로 전환          
             }
             else
             {
@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
         {
             if ((int)GameTime3 == 0) //3라운드 실패
             {
-                SceneManager.LoadScene("GameOver"); //실패 화면으로 전환               
+                SceneManager.LoadScene("GameOver_Mieu"); //실패 화면으로 전환               
             }
             else
             {
