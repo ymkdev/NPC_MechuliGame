@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class HomesManager : MonoBehaviour
 {
     public HomesDatabase homeDB;
@@ -59,7 +60,10 @@ public class HomesManager : MonoBehaviour
                 else
                 {
                     if (selectedOption_home == 0)
-                        SceneManager.LoadScene(4);
+                        SceneManager.LoadScene(1);
+
+                    else if(selectedOption_home == 5)
+                        SceneManager.LoadScene(1);
                     else if (selectedOption_home == 1)
                         SceneManager.LoadScene(0);
                 }

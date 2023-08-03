@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class tori_start : MonoBehaviour, IPointerDownHandler
+public class tori_Intro : MonoBehaviour, IPointerDownHandler
 {
     public GameObject chuchu1;
     public GameObject chuchu2;
@@ -22,8 +22,8 @@ public class tori_start : MonoBehaviour, IPointerDownHandler
             "내 밭에 있는 당근이 너무 많아서 몇 개인지 모르겠어..!",
             "그런 거라면 문제없지! 내가 당근의 개수를 다 세주면 되는 거지??",
             "개수까지는 괜찮고, 홀수인지 짝수인지만 알려주면 돼!",
-            "이번 게임은 홀짝 게임이야 잘 알고 있지??", 
-            ".", 
+            "이번 게임은 홀짝 게임이야 잘 알고 있지??",
+            ".",
             "."
         };
     public int dialogue_count = 0;
