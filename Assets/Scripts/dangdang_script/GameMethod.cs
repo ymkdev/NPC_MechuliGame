@@ -9,7 +9,7 @@ public class GameMethod : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("MainScene");
 
     }
 }
