@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Timer : MonoBehaviour
+public class shop_Timer : MonoBehaviour
 {
     [SerializeField] GameObject fail;
     [SerializeField] GameObject success;

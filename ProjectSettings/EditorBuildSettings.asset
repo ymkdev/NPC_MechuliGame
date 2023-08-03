@@ -6,32 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/frog/frog_MainScene.unity
-    guid: b2bc40e029b04324e856b950b309acf4
+    path: Assets/Scenes/sqe/Seq_Dialog.unity
+    guid: 9b11597bec947c24ebe732e64dee6c01
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk.unity
+    guid: 5e9252e0061bdd547bf0d1463aceef22
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_dialogue.unity
+    guid: e38102b867b442943a3ca7c0f82fe5ce
   - enabled: 1
     path: Assets/Scenes/tori/tori_Intro.unity
     guid: 452520d7af0501b438d1b513ad1fb523
   - enabled: 1
-    path: Assets/Scenes/frog/ClearScene.unity
-    guid: 9d43f6068b9f2f445961a44b7cce99e9
-  - enabled: 1
-    path: Assets/Scenes/frog/FailScene.unity
-    guid: 0134e497a91e68e4f808a87d19f326a4
-  - enabled: 1
-    path: Assets/Scenes/frog/HintScene.unity
-    guid: 6ee80f08701c07c43bcd0708b43da8fb
-  - enabled: 1
-    path: Assets/Scenes/frog/TestScene.unity
-    guid: 4390f1ae2e97c0c4aac271a78386f427
-  - enabled: 1
-    path: Assets/Scenes/frog/AfterClearScene.unity
-    guid: de6668a7b1c000d40809e920d0172290
-  - enabled: 1
     path: Assets/Scenes/tori/tori_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/dangdang/dangdang_dialogue.unity
-    guid: e38102b867b442943a3ca7c0f82fe5ce
   - enabled: 1
     path: Assets/Scenes/dangdang/dangdang_dialoggue 1.unity
     guid: 30a352d6f962ce641bd3254c77037498

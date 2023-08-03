@@ -62,6 +62,9 @@ public class HomesManager : MonoBehaviour
                     if (selectedOption_home == 0)
                         SceneManager.LoadScene("tori_Intro");
 
+                    else if (selectedOption_home == 1)
+                        SceneManager.LoadScene("Seq_Dialog");
+
                     else if (selectedOption_home == 2)
                         SceneManager.LoadScene("frog_MainScene");
 
