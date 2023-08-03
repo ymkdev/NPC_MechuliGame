@@ -77,8 +77,8 @@ public class HomesManager : MonoBehaviour
                     else if(selectedOption_home == 5)
                         SceneManager.LoadScene("tori_Intro");
 
-                    else if (selectedOption_home == 1)
-                        SceneManager.LoadScene(0);
+                    else
+                        SceneManager.LoadScene("Seq_Dialog");
                 }
 
             }
