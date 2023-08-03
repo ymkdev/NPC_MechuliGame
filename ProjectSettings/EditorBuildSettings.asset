@@ -29,4 +29,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tori/tori_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_dialogue.unity
+    guid: e38102b867b442943a3ca7c0f82fe5ce
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_dialoggue 1.unity
+    guid: 30a352d6f962ce641bd3254c77037498
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_gameMethod.unity
+    guid: 5fd47c0f67d38cc429372337b2a3c8c6
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_hintAnddialogue1.unity
+    guid: 3144815d42dfa5c4ea7c112d1f2261e8
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_MainScene 1.unity
+    guid: 9e67ab0ec3e466340a232fb619134713
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_MainScene 2.unity
+    guid: f0241eef8dde7ff44abbc53ed68b5be8
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_MainScene.unity
+    guid: b11fd06a6e1d1914583f7f55b84634c5
+  - enabled: 1
+    path: Assets/Scenes/dangdang/dangdang_obtainhintScene.unity
+    guid: 5ec396db39ca8f44293eab1789fad555
   m_configObjects: {}

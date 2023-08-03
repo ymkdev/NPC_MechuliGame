@@ -10,6 +10,6 @@ public class gotoAnotherDialogue : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene("dangdang_dialoggue 1");
     }
 }

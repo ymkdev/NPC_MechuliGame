@@ -66,12 +66,12 @@ public class GameControllerScript : MonoBehaviour
 
     public void selectToAnotherScene()
     {
-        SceneManager.LoadScene("MainScene 1");
+        SceneManager.LoadScene("dangdang_MainScene 1");
     }
 
     public void SecondScene()
     {   
-        SceneManager.LoadScene("MainScene 1");
+        SceneManager.LoadScene("dangdang_MainScene 1");
     }
 
 
@@ -202,7 +202,7 @@ public class GameControllerScript : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("dangdang_MainScene");
     }
 
 

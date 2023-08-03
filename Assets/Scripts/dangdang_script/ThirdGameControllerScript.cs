@@ -82,7 +82,7 @@ public class ThirdGameControllerScript : MonoBehaviour
 
     public void SecondScene()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("dangdang_MainScene");
     }
 
 
@@ -285,7 +285,7 @@ public class ThirdGameControllerScript : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("dangdang_MainScene");
     }
 
     /*public void have_hint()

@@ -6,14 +6,14 @@ public class Game1_select : MonoBehaviour
 {
     public void selectToAnotherScene()
     {
-        SceneManager.LoadScene("MainScene 1");
+        SceneManager.LoadScene("dangdang_MainScene 1");
     }
     public void selectToAnotherScene2()
     {
-        SceneManager.LoadScene("MainScene 2");
+        SceneManager.LoadScene("dangdang_MainScene 2");
     }
     public void selectToAnotherScene3()
     {
-        SceneManager.LoadScene("obtainhintScene");
+        SceneManager.LoadScene("dangdang_obtainhintScene");
     }
 }
