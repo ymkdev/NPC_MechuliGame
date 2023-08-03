@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EventManager : MonoBehaviour
+public class tori_EventManager : MonoBehaviour
 {
     public GameObject Success; //성공 이미지
     public GameObject Failure; //실패 이미지

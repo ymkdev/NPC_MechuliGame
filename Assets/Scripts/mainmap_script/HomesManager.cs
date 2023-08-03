@@ -60,13 +60,13 @@ public class HomesManager : MonoBehaviour
                 else
                 {
                     if (selectedOption_home == 0)
-                        SceneManager.LoadScene("tori_Intro");
+                        SceneManager.LoadScene("Talk_Mieu");
 
                     else if (selectedOption_home == 1)
                         SceneManager.LoadScene("Seq_Dialog");
 
                     else if (selectedOption_home == 2)
-                        SceneManager.LoadScene("frog_MainScene");
+                        SceneManager.LoadScene("fly_MainScene");
 
                     else if (selectedOption_home == 3)
                         SceneManager.LoadScene("BaneulTalk");

@@ -2,7 +2,7 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class SoundOptions : MonoBehaviour
+public class tori_SoundOptions : MonoBehaviour
 {
     // ¿Àµð¿À ¹Í¼­
     public AudioMixer audioMixer;
