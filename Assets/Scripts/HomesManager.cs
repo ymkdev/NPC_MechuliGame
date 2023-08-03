@@ -60,10 +60,13 @@ public class HomesManager : MonoBehaviour
                 else
                 {
                     if (selectedOption_home == 0)
-                        SceneManager.LoadScene(1);
+                        SceneManager.LoadScene("tori_Intro");
+
+                    else if (selectedOption_home == 2)
+                        SceneManager.LoadScene("MainScene");
 
                     else if(selectedOption_home == 5)
-                        SceneManager.LoadScene(1);
+                        SceneManager.LoadScene("tori_Intro");
                     else if (selectedOption_home == 1)
                         SceneManager.LoadScene(0);
                 }
