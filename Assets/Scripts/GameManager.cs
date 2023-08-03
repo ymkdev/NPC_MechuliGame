@@ -35,11 +35,11 @@ public class GameManager : MonoBehaviour
     public GameObject reButton2;
     public GameObject reButton3;
 
-    public void NextStage() //´ÙÀ½ ½ºÅ×ÀÌÁö·Î ³Ñ¾î°¡±â
+    public void NextStage() //ë‹¤ìŒ ìŠ¤í…Œì´ì§€ë¡œ ë„˜ì–´ê°€ê¸°
     {
         if (stageIndex < Stages.Length - 1)
         {
-            UISuccess.SetActive(false); //¼º°ø °ü·Ã ui °¡¸®±â
+            UISuccess.SetActive(false); //ì„±ê³µ ê´€ë ¨ ui ê°€ë¦¬ê¸°
            //UISuccessOk.SetActive(false);
             //UISFBackground.SetActive(false);
             button1.SetActive(false);
@@ -57,13 +57,13 @@ public class GameManager : MonoBehaviour
         {
             stageIndex++;
             Time.timeScale = 0;
-            Debug.Log("°ÔÀÓ Å¬¸®¾î!");
+            Debug.Log("ê²Œì„ í´ë¦¬ì–´!");
         }
         point = 0;
     }
     public void ReturnStage() 
     {
-        SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆĞ È­¸éÀ¸·Î ÀÌµ¿
+        SceneManager.LoadScene("GameOver_Mieu"); //ì‹¤íŒ¨ í™”ë©´ìœ¼ë¡œ ì´ë™
     }
 
     public void NextHint()
@@ -74,31 +74,31 @@ public class GameManager : MonoBehaviour
         button3.SetActive(false);
         Stages[stageIndex].SetActive(false);
 
-        SceneManager.LoadScene("Hint_Mieu"); //ÈùÆ®Ã¢À¸·Î ÀÌµ¿
+        SceneManager.LoadScene("Hint_Mieu"); //íŒíŠ¸ì°½ìœ¼ë¡œ ì´ë™
     }
 
 
 // Update is called once per frame
     public void Update()
     {
-        if (stageIndex == 0) //1¶ó¿îµå
+        if (stageIndex == 0) //1ë¼ìš´ë“œ
         {
-            if ((int)GameTime1 == 0) //1¶ó¿îµå ½ÇÆĞ
+            if ((int)GameTime1 == 0) //1ë¼ìš´ë“œ ì‹¤íŒ¨
             {
-                SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆĞ È­¸éÀ¸·Î ÀüÈ¯
+                SceneManager.LoadScene("GameOver_Mieu"); //ì‹¤íŒ¨ í™”ë©´ìœ¼ë¡œ ì „í™˜
             }
-            else //½Ã°£ Èå¸£°Ô...
+            else //ì‹œê°„ íë¥´ê²Œ...
             {
                 GameTime1 -= Time.deltaTime;
                 //Debug.Log((int)GameTime1);
                 UITimer.text = "" + (int)GameTime1;
             }
         }
-        if (stageIndex == 1) //2¶ó¿îµå
+        if (stageIndex == 1) //2ë¼ìš´ë“œ
         {
-            if ((int)GameTime2 == 0) //2¶ó¿îµå ½ÇÆĞ
+            if ((int)GameTime2 == 0) //2ë¼ìš´ë“œ ì‹¤íŒ¨
             {
-                SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆĞ È­¸éÀ¸·Î ÀüÈ¯          
+                SceneManager.LoadScene("GameOver_Mieu"); //ì‹¤íŒ¨ í™”ë©´ìœ¼ë¡œ ì „í™˜          
             }
             else
             {
@@ -107,11 +107,11 @@ public class GameManager : MonoBehaviour
                 UITimer2.text = "" + (int)GameTime2;
             }
         }
-        if (stageIndex == 2) //3¶ó¿îµå
+        if (stageIndex == 2) //3ë¼ìš´ë“œ
         {
-            if ((int)GameTime3 == 0) //3¶ó¿îµå ½ÇÆĞ
+            if ((int)GameTime3 == 0) //3ë¼ìš´ë“œ ì‹¤íŒ¨
             {
-                SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆĞ È­¸éÀ¸·Î ÀüÈ¯               
+                SceneManager.LoadScene("GameOver_Mieu"); //ì‹¤íŒ¨ í™”ë©´ìœ¼ë¡œ ì „í™˜               
             }
             else
             {
@@ -120,5 +120,129 @@ public class GameManager : MonoBehaviour
                 UITimer3.text = "" + (int)GameTime3;
             }
         }
+    }
+}
+    public float currentTime = 0.0f;
+    private bool isTimerRunning = false;
+
+    public float startTime = 5;
+    public int score = 0;
+    public int check = 0;
+    public int stageIndex;
+    public bool flag = true;
+
+    public GameObject[] Stages;
+    public Sprite[] Levels;
+
+    public GameObject Next;
+    public GameObject Success;
+    public GameObject Rule;
+    public GameObject Canvas;
+
+    public float setTime;
+    public Text countdownText;
+    public Text scoreText;
+    public GameObject level;
+
+
+    void Awake()
+    {
+        currentTime = 0.0f;
+        isTimerRunning = false;
+    }
+    void Start()
+    {
+        Rule.SetActive(true);
+        isTimerRunning = true;
+
+        Next.SetActive(false);
+        countdownText.text = "ë‚¨ì€ ì‹œê°„ : " + Mathf.Round(setTime).ToString() + "ì´ˆ";
+        scoreText.text = "ì ìˆ˜ : " + score.ToString();
+        level.GetComponent<Image>().sprite = Levels[stageIndex];
+
+        Next.SetActive(false);
+        Success.SetActive(false);
+        Stages[0].SetActive(false);
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       if (isTimerRunning)
+        {
+            Debug.Log("ê²Œì„ ê²½ê³¼ ì‹œê°„ :"+Time.time);
+            Debug.Log("current Time: "+currentTime);
+            currentTime += Time.deltaTime;
+            if (currentTime >= startTime)
+            {
+                Rule.SetActive(false);
+                Canvas.SetActive(true);
+                Stages[0].SetActive(true);
+                // íƒ€ì´ë¨¸ ì¢…ë£Œ
+                isTimerRunning = false;
+            }
+        }
+
+        if (setTime > 0)
+            setTime -= Time.deltaTime;
+        else if (setTime <= 0)
+        {
+            SceneManager.LoadScene("FailScene");
+            stageIndex = 0;
+        }
+        countdownText.text = "ë‚¨ì€ ì‹œê°„ : " + Mathf.Round(setTime).ToString() + "ì´ˆ";
+        scoreText.text = "ì ìˆ˜ : " + score.ToString();
+        level.GetComponent<Image>().sprite = Levels[stageIndex];
+
+        if (flag)
+        {
+            if (stageIndex == 0)
+                check = 1;
+            else if (stageIndex == 1)
+                check = 2;
+            else if (stageIndex == 2)
+                check = 3;
+
+            if (check == score)
+            {
+                flag = false;
+                Time.timeScale = 0;
+                Next.SetActive(true);
+                Success.SetActive(true);
+            }
+        }
+    }
+
+    public void NextStage()
+    {
+        Debug.Log("NextStageí•¨ìˆ˜ ì‹¤í–‰");
+        Next.SetActive(false);
+        Success.SetActive(false);
+        flag = true;
+        score = 0;
+
+        Time.timeScale = 1;
+
+        if (stageIndex < Stages.Length - 1)
+        {
+            Stages[stageIndex].SetActive(false);
+            stageIndex++;
+            Stages[stageIndex].SetActive(true);
+
+            if (stageIndex == 1)
+                setTime = 20.0f;
+            else if (stageIndex == 2)
+                setTime = 10.0f;
+
+            //stageText.text = "Level" + (stageIndex + 1).ToString();
+            Debug.Log("í˜„ì¬ ìŠ¤í…Œì´ì§€ : " + (stageIndex + 1));
+        }
+        else //Game Clear1
+        {
+            Debug.Log("ê²Œì„ í´ë¦¬ì–´");
+            SceneManager.LoadScene("ClearScene");
+        }
+
     }
 }
