@@ -15,14 +15,62 @@ EditorBuildSettings:
     path: Assets/Scenes/dangdang/dangdang_dialogue.unity
     guid: e38102b867b442943a3ca7c0f82fe5ce
   - enabled: 1
+    path: Assets/Scenes/bugi/EndScene.unity
+    guid: 07d1539bcd9dfc3478a70bf0667afb7d
+  - enabled: 1
+    path: Assets/Scenes/bugi/Seq_EndDialog.unity
+    guid: 9dfbf655bf5f8ea4890d3f657f9762b4
+  - enabled: 1
+    path: Assets/Scenes/bugi/Seq_Hint.unity
+    guid: 0d5d67fdef09bbf4aa2ecba04bde03d2
+  - enabled: 1
+    path: Assets/Scenes/bugi/Seq_Level1.unity
+    guid: c455cb8828c74a547a2a616fca90f1fc
+  - enabled: 1
+    path: Assets/Scenes/bugi/Seq_Level2.unity
+    guid: 5da15342771b2ef4393b9df5f6812a68
+  - enabled: 1
     path: Assets/Scenes/tori/tori_Intro.unity
     guid: 452520d7af0501b438d1b513ad1fb523
   - enabled: 1
     path: Assets/Scenes/tori/tori_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/miu/Hint_Mieu.unity
+    guid: 874e3fde2a6fb0e448f7417935596f11
+  - enabled: 1
+    path: Assets/Scenes/miu/HowTo_Mieu.unity
+    guid: cf9dfc8960638cf48a7e0c12e5278c7e
+  - enabled: 1
+    path: Assets/Scenes/miu/SampleScene_Mieu.unity
+    guid: b4872355dfdce1c4db6bd1f9d8033e19
+  - enabled: 1
+    path: Assets/Scenes/miu/Talk_Mieu.unity
+    guid: ccad25cfbef895a41ab98bed4bae9150
+  - enabled: 1
     path: Assets/Scenes/dangdang/dangdang_dialoggue 1.unity
     guid: 30a352d6f962ce641bd3254c77037498
+  - enabled: 1
+    path: Assets/Scenes/fly/AfterClearScene.unity
+    guid: de6668a7b1c000d40809e920d0172290
+  - enabled: 1
+    path: Assets/Scenes/fly/ClearScene.unity
+    guid: 9d43f6068b9f2f445961a44b7cce99e9
+  - enabled: 1
+    path: Assets/Scenes/fly/FailScene.unity
+    guid: 0134e497a91e68e4f808a87d19f326a4
+  - enabled: 1
+    path: Assets/Scenes/fly/fly_GameScene.unity
+    guid: 0c28081d797d6d746a77ec75f33fb3b1
+  - enabled: 1
+    path: Assets/Scenes/fly/fly_MainScene.unity
+    guid: b2bc40e029b04324e856b950b309acf4
+  - enabled: 1
+    path: Assets/Scenes/fly/HintScene.unity
+    guid: 6ee80f08701c07c43bcd0708b43da8fb
+  - enabled: 1
+    path: Assets/Scenes/fly/TestScene.unity
+    guid: 4390f1ae2e97c0c4aac271a78386f427
   - enabled: 1
     path: Assets/Scenes/dangdang/dangdang_gameMethod.unity
     guid: 5fd47c0f67d38cc429372337b2a3c8c6
