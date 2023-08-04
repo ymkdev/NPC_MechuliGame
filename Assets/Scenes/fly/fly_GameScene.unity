@@ -550,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626275621a2212841aa39784bceebb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyPrefab: {fileID: 8717889499657026384, guid: dc9ff236ce83c35448fbea3ecf3545b1, type: 3}
+  flyPrefab: {fileID: 8717889499657026384, guid: 669e9a46d645ce4449d587db20b96d8b, type: 3}
   num: 0
 --- !u!1 &519420028
 GameObject:
@@ -918,7 +918,6 @@ MonoBehaviour:
   setTime: 10
   countdownText: {fileID: 1996482524}
   scoreText: {fileID: 931487776}
-  stageText: {fileID: 0}
   level: {fileID: 1533234812}
 --- !u!1 &931487774
 GameObject:
@@ -1213,7 +1212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626275621a2212841aa39784bceebb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyPrefab: {fileID: 8717889499657026384, guid: dc9ff236ce83c35448fbea3ecf3545b1, type: 3}
+  flyPrefab: {fileID: 8717889499657026384, guid: 669e9a46d645ce4449d587db20b96d8b, type: 3}
   num: 0
 --- !u!1 &1145270300
 GameObject:
@@ -1525,7 +1524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626275621a2212841aa39784bceebb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyPrefab: {fileID: 8717889499657026384, guid: dc9ff236ce83c35448fbea3ecf3545b1, type: 3}
+  flyPrefab: {fileID: 8717889499657026384, guid: 669e9a46d645ce4449d587db20b96d8b, type: 3}
   num: 0
 --- !u!4 &1921483105
 Transform:
