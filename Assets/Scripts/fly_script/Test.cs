@@ -7,12 +7,12 @@ public class Test : MonoBehaviour
     public GameObject Hint;
     public void SceneChange()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("fly_MainScene");
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("fly_GameScene");
         //Test
     }
 

@@ -12,7 +12,7 @@ public class AllDialogue : MonoBehaviour
         Debug.Log("All Dialogue 스크립트 실행");
 
         scene = SceneManager.GetActiveScene();
-        if ((scene.name).Equals("MainScene"))
+        if ((scene.name).Equals("fly_MainScene"))
         {
             sentences = new string[] { "여긴 왜 이렇게 파리가 많아….", "(개굴이가 뛰쳐나온다)", "개굴아 무슨 일이야??",
             "집에 파리가 너무 많아ㅠㅠㅠ\n나 좀 도와주라", "(맞다 개굴이는 파리를 무서워하는\n특이한 개구리였지..)",

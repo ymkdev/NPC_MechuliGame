@@ -60,7 +60,7 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log(sentences.Count);
             currentSentence = sentences.Dequeue();
-            if ((scene.name).Equals("MainScene")) //메인씬 캐릭터 이미지 교체
+            if ((scene.name).Equals("fly_MainScene")) //메인씬 캐릭터 이미지 교체
             {
                 if (index % 2 == 1 || index > 4)
                 {
@@ -105,8 +105,8 @@ public class DialogueManager : MonoBehaviour
         {
             /*dialogueGroup.alpha = 0;
             dialogueGroup.blocksRaycasts = false;*/
-            if ((scene.name).Equals("MainScene"))
-                SceneManager.LoadScene("GameScene");
+            if ((scene.name).Equals("fly_MainScene"))
+                SceneManager.LoadScene("fly_GameScene");
             else if ((scene.name).Equals("ClearScene"))
                 SceneManager.LoadScene("TestScene");
         }
