@@ -12,7 +12,7 @@ public class HomesManager : MonoBehaviour
     public SpriteRenderer artworkSprite;
     //public int flag = 0;
     public int selectedOption_home = 0;
-    public GameObject A;
+    //public GameObject A;
 
     public void Awake()
     {
@@ -63,7 +63,7 @@ public class HomesManager : MonoBehaviour
                         SceneManager.LoadScene("Talk_Mieu");
 
                     else if (selectedOption_home == 1)
-                        SceneManager.LoadScene("Seq_Dialog");
+                        SceneManager.LoadScene("pic_Storyscene");
 
                     else if (selectedOption_home == 2)
                         SceneManager.LoadScene("fly_MainScene");
@@ -112,11 +112,11 @@ public class HomesManager : MonoBehaviour
     {
         Homes home = homeDB.GetHomes(selectedOption_home);
         artworkSprite.sprite = home.homeSprite;
-        if (home.homeFlag == 0)
+        /*if (home.homeFlag == 0)
             A.SetActive(true);
         else
             A.SetActive(false);
-
+        */
     }
 
     private void Load()
