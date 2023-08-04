@@ -67,7 +67,6 @@ public class DialogManager : MonoBehaviour
         txtName.text = names.Dequeue();
     }
 
-
     public void End()
     {
         if (cnt == 8) // before game start
