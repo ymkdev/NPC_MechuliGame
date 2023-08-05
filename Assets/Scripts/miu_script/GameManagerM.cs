@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerM : MonoBehaviour
 {
-    public Setting set;
+    public Setting_Miu set;
     public GameObject s;
     public GameObject s2;
 
@@ -35,11 +35,11 @@ public class GameManagerM : MonoBehaviour
     public GameObject reButton2;
     public GameObject reButton3;
 
-    public void NextStage() //´ÙÀ½ ½ºÅ×ÀÌÁö·Î ³Ñ¾î°¡±â
+    public void NextStage() //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½
     {
         if (stageIndex < Stages.Length - 1)
         {
-            UISuccess.SetActive(false); //¼º°ø °ü·Ã ui °¡¸®±â
+            UISuccess.SetActive(false); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ui ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                                         //UISuccessOk.SetActive(false);
                                         //UISFBackground.SetActive(false);
             button1.SetActive(false);
@@ -57,13 +57,13 @@ public class GameManagerM : MonoBehaviour
         {
             stageIndex++;
             Time.timeScale = 0;
-            Debug.Log("°ÔÀÓ Å¬¸®¾î!");
+            Debug.Log("ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½!");
         }
         point = 0;
     }
     public void ReturnStage()
     {
-        SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆÐ È­¸éÀ¸·Î ÀÌµ¿
+        SceneManager.LoadScene("GameOver_Mieu"); //ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
     }
 
     public void NextHint()
@@ -74,31 +74,31 @@ public class GameManagerM : MonoBehaviour
         button3.SetActive(false);
         Stages[stageIndex].SetActive(false);
 
-        SceneManager.LoadScene("Hint_Mieu"); //ÈùÆ®Ã¢À¸·Î ÀÌµ¿
+        SceneManager.LoadScene("Hint_Mieu"); //ï¿½ï¿½Æ®Ã¢ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
     }
 
 
     // Update is called once per frame
     public void Update()
     {
-        if (stageIndex == 0) //1¶ó¿îµå
+        if (stageIndex == 0) //1ï¿½ï¿½ï¿½ï¿½
         {
-            if ((int)GameTime1 == 0) //1¶ó¿îµå ½ÇÆÐ
+            if ((int)GameTime1 == 0) //1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             {
-                SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆÐ È­¸éÀ¸·Î ÀüÈ¯
+                SceneManager.LoadScene("GameOver_Mieu"); //ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
             }
-            else //½Ã°£ Èå¸£°Ô...
+            else //ï¿½Ã°ï¿½ ï¿½å¸£ï¿½ï¿½...
             {
                 GameTime1 -= Time.deltaTime;
                 //Debug.Log((int)GameTime1);
                 UITimer.text = "" + (int)GameTime1;
             }
         }
-        if (stageIndex == 1) //2¶ó¿îµå
+        if (stageIndex == 1) //2ï¿½ï¿½ï¿½ï¿½
         {
-            if ((int)GameTime2 == 0) //2¶ó¿îµå ½ÇÆÐ
+            if ((int)GameTime2 == 0) //2ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             {
-                SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆÐ È­¸éÀ¸·Î ÀüÈ¯          
+                SceneManager.LoadScene("GameOver_Mieu"); //ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯          
             }
             else
             {
@@ -107,11 +107,11 @@ public class GameManagerM : MonoBehaviour
                 UITimer2.text = "" + (int)GameTime2;
             }
         }
-        if (stageIndex == 2) //3¶ó¿îµå
+        if (stageIndex == 2) //3ï¿½ï¿½ï¿½ï¿½
         {
-            if ((int)GameTime3 == 0) //3¶ó¿îµå ½ÇÆÐ
+            if ((int)GameTime3 == 0) //3ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             {
-                SceneManager.LoadScene("GameOver_Mieu"); //½ÇÆÐ È­¸éÀ¸·Î ÀüÈ¯               
+                SceneManager.LoadScene("GameOver_Mieu"); //ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯               
             }
             else
             {
