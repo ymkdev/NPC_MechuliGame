@@ -16,15 +16,15 @@ public class BubbleSpawner : MonoBehaviour
 
     public void Update()
     {
-        //objectSpawnCount °³¼ö¸¸Å­¸¸ »ý¼ºÇÏ°í ´õÀÌ»ó »ý¼ºÇÏÁö ¾Êµµ·Ï ÇÏ±â À§ÇØ ¼³Á¤
+        //objectSpawnCount ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½Ì»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½ ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if(currentObjectCount + 1 > objectSpawnCount)
         {
             return;
         }
-        //¿øÇÏ´Â ½Ã°£¸¶´Ù ¿ÀºêÁ§Æ®¸¦ »ý¼ºÇÏ±â À§ÇÑ ½Ã°£ º¯¼ö ¿¬»ê
+        //ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         objectSpawnTime += Time.deltaTime;
         
-        //0.5ÃÊ¿¡ ÇÑ¹ø¾¿ ½ÇÇà
+        //0.5ï¿½Ê¿ï¿½ ï¿½Ñ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if(objectSpawnTime >= 1.0f)
         {
             int prefabIndex = Random.Range(0, prefabArray.Length);
@@ -35,7 +35,7 @@ public class BubbleSpawner : MonoBehaviour
             bu.Add(clone);
 
             Vector3 moveDirection = Vector3.up;
-            clone.GetComponent<Movement2D>().SetUp(moveDirection);
+            clone.GetComponent<Movement2D_Miu>().SetUp(moveDirection);
 
             currentObjectCount++;
             objectSpawnTime = 0.0f;

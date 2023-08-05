@@ -509,8 +509,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Set
         m_Mode: 1
         m_Arguments:
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1924959503}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HintScript, Assembly-CSharp
         m_MethodName: letterClick
         m_Mode: 1
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 338561239b8a9854b8e6cf2087619b97, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc206f60c0ad22a4cabc97e91fd339b4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8dc743436fb00364ea2cecc22eccb39e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458dee60db44feb4c9bb68aed7e40cdb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2780,7 +2780,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 3dc7fa0e76186454f83c0fd5e0501a90, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 45db0e83d03286144a1209aff13d93f2, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2794,8 +2794,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: ExplainOn
         m_Mode: 1
         m_Arguments:
@@ -2826,7 +2826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 594e4f3b134e5b64f81a4d7bdf631333, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9d520cfab6bcf740978c198fd8cb0a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3921,8 +3921,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Sound
         m_Mode: 1
         m_Arguments:
@@ -4613,7 +4613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 538883315}
-  - component: {fileID: 538883314}
+  - component: {fileID: 538883316}
   m_Layer: 0
   m_Name: Setting
   m_TagString: Untagged
@@ -4621,25 +4621,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &538883314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538883313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998db91ea616d6e4f85b43de061e5fc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Eggs: {fileID: 381100652}
-  Settings: {fileID: 911979894}
-  Sounds: {fileID: 1628031643}
-  ex: {fileID: 221650543}
-  btn1: {fileID: 844505360}
-  btn2: {fileID: 58878470}
-  btn3: {fileID: 488926501}
 --- !u!4 &538883315
 Transform:
   m_ObjectHideFlags: 0
@@ -4655,6 +4636,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &538883316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538883313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0acf1a1479185d46b3a64bd70c38fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Eggs: {fileID: 381100652}
+  Settings: {fileID: 911979894}
+  Sounds: {fileID: 1628031643}
+  ex: {fileID: 221650543}
+  btn1: {fileID: 844505360}
+  btn2: {fileID: 58878470}
+  btn3: {fileID: 488926501}
 --- !u!1 &546786149
 GameObject:
   m_ObjectHideFlags: 0
@@ -5361,7 +5361,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1924959503}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HintScript, Assembly-CSharp
         m_MethodName: letterClick
         m_Mode: 1
@@ -5556,7 +5556,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: d836a7533260cdd44a5eb5abeb9519ce, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: f9febdc58c723a348967118dd62adf57, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -5570,8 +5570,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -5602,7 +5602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f66ad9640e098074087267282d0a3b1a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d721b6932a92754bbf96d69c241fdba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5870,8 +5870,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -5902,7 +5902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c278e48d297e00142b9e64679b0ba218, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3cda2da98265e4a8c66a6d5640ae94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6684,7 +6684,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8dc743436fb00364ea2cecc22eccb39e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 458dee60db44feb4c9bb68aed7e40cdb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6859,8 +6859,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Egg
         m_Mode: 1
         m_Arguments:
@@ -7248,7 +7248,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e44204f744a39c64fb1c5cee0b21edff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cec3d4171e0fe764089cc8cfbf30ed51, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7425,8 +7425,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -7457,7 +7457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e86c7946c93e624782c1e93e1ca6e81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75b09946cb1c2fd40aa86c54aa483487, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7804,7 +7804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd91f007e1e1b0d43a13d757711339c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53cfead06c1e93745825bd1508bd6ad7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8449,7 +8449,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 1d2b2ba7655857445b660e415b812bd4, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 8197e2af86c27dd4e9fdedf0b6c8b4b7, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -8483,7 +8483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3130a0e53474e1b4ebfa4fc8ec17d203, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0022b9be68969b448c00a41ec9ece61, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9087,7 +9087,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: c739d009e5d37c54982039a093758cb4, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 05f3c74b92beaac499cf687ccc92cf50, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -9101,8 +9101,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1924959503}
-        m_TargetAssemblyTypeName: HintScript, Assembly-CSharp
+      - m_Target: {fileID: 1924959505}
+        m_TargetAssemblyTypeName: HintScript_Miu, Assembly-CSharp
         m_MethodName: letterClick
         m_Mode: 1
         m_Arguments:
@@ -9133,7 +9133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e4e1ecfe5051a645b91865079910b01, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db59c8377a38df04d8bef08d12a816e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9608,7 +9608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b8843ba286f43ed4587e7ee6306ac6e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 322ebff9bc7627b43bdc6f162a7b1a19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9741,7 +9741,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 336524e6832c5744cbb1d7d7c2d664fd, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 04e671243c30a264ba0d798e3da81db1, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -9755,8 +9755,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538883314}
-        m_TargetAssemblyTypeName: Setting, Assembly-CSharp
+      - m_Target: {fileID: 538883316}
+        m_TargetAssemblyTypeName: Setting_Miu, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
@@ -9787,7 +9787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5ac6cea29a645349a6ea657ece20467, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 230d5a6c45229f047b974ba1b39cc8da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11756,7 +11756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 35b43311cc0ed8d4bb676e25e9eaca67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 99f1fc812bdd673488565c0ddf1ec1e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13547,7 +13547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1924959503}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HintScript, Assembly-CSharp
         m_MethodName: letterClick
         m_Mode: 1
@@ -14159,7 +14159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1924959504}
-  - component: {fileID: 1924959503}
+  - component: {fileID: 1924959505}
   m_Layer: 0
   m_Name: HintScript
   m_TagString: Untagged
@@ -14167,29 +14167,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1924959503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924959502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 736930c7372e510468d86dd599191291, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hint: {fileID: 1868479816}
-  Story: {fileID: 779179866}
-  letterUnopen: {fileID: 1296362763}
-  HintOpen: {fileID: 1143399591}
-  StoryThanks: {fileID: 1689031964}
-  TalkC1: {fileID: 709423405}
-  nameC: {fileID: 172508935}
-  ChuChu: {fileID: 1452624908}
-  TalkM: {fileID: 506282161}
-  nameM: {fileID: 1453660518}
-  Meaw: {fileID: 186872340}
 --- !u!4 &1924959504
 Transform:
   m_ObjectHideFlags: 0
@@ -14205,6 +14182,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1924959505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924959502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aca0ec445d8e8d4f87ccadde2848cdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hint: {fileID: 1868479816}
+  Story: {fileID: 779179866}
+  letterUnopen: {fileID: 1296362763}
+  HintOpen: {fileID: 1143399591}
+  StoryThanks: {fileID: 1689031964}
+  TalkC1: {fileID: 709423405}
+  nameC: {fileID: 172508935}
+  ChuChu: {fileID: 1452624908}
+  TalkM: {fileID: 506282161}
+  nameM: {fileID: 1453660518}
+  Meaw: {fileID: 186872340}
 --- !u!1 &1972782561
 GameObject:
   m_ObjectHideFlags: 0
@@ -14657,7 +14657,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: c739d009e5d37c54982039a093758cb4, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 05f3c74b92beaac499cf687ccc92cf50, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -14671,7 +14671,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1924959503}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HintScript, Assembly-CSharp
         m_MethodName: letterClick
         m_Mode: 1
@@ -14703,7 +14703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e4e1ecfe5051a645b91865079910b01, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db59c8377a38df04d8bef08d12a816e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

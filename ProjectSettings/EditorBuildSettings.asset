@@ -15,6 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk.unity
     guid: 5e9252e0061bdd547bf0d1463aceef22
   - enabled: 1
+    path: Assets/Scenes/miu/Talk_Mieu.unity
+    guid: 3eb1f9796ef59b640ba6ecec18f6827a
+  - enabled: 1
+    path: Assets/Scenes/miu/HowTo_Mieu.unity
+    guid: 7069e773892f6d243b4732a44a7bd9e7
+  - enabled: 1
+    path: Assets/Scenes/miu/SampleScene_Mieu.unity
+    guid: 956d3910006a76a45acd27f4e4688834
+  - enabled: 1
+    path: Assets/Scenes/miu/Hint_Mieu.unity
+    guid: 21dd6a8770778614d88d1a44cffc8360
+  - enabled: 1
     path: Assets/Scenes/dangdang/dangdang_dialogue.unity
     guid: e38102b867b442943a3ca7c0f82fe5ce
   - enabled: 1
@@ -38,18 +50,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tori/tori_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/miu/Hint_Mieu.unity
-    guid: 874e3fde2a6fb0e448f7417935596f11
-  - enabled: 1
-    path: Assets/Scenes/miu/HowTo_Mieu.unity
-    guid: cf9dfc8960638cf48a7e0c12e5278c7e
-  - enabled: 1
-    path: Assets/Scenes/miu/SampleScene_Mieu.unity
-    guid: b4872355dfdce1c4db6bd1f9d8033e19
-  - enabled: 1
-    path: Assets/Scenes/miu/Talk_Mieu.unity
-    guid: ccad25cfbef895a41ab98bed4bae9150
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/dangdang/dangdang_dialoggue 1.unity
     guid: 30a352d6f962ce641bd3254c77037498
@@ -110,6 +122,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fly/ClearScene.unity
     guid: 9d43f6068b9f2f445961a44b7cce99e9
+  - enabled: 1
+    path: Assets/Scenes/miu/GameOver_Mieu.unity
+    guid: 9d81fca0551288d4199a31aa36af6af6
   - enabled: 1
     path: Assets/Scenes/fly/AfterClearScene.unity
     guid: de6668a7b1c000d40809e920d0172290
