@@ -182,4 +182,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMap_1.unity
     guid: e917205ba27463f48a6af14f052c6585
+  - enabled: 1
+    path: Assets/Scenes/pic/pic_Endscene.unity
+    guid: 6d2c58d557a044948a3607f7739e36dc
+  - enabled: 1
+    path: Assets/Scenes/pic/pic_Gamescene.unity
+    guid: 769c0be647869444585e5b527a9e640d
+  - enabled: 1
+    path: Assets/Scenes/pic/pic_Gamescene2.unity
+    guid: bfa474edb33340745a1a9e063d8ea48d
+  - enabled: 1
+    path: Assets/Scenes/pic/pic_Methodscene.unity
+    guid: c1c4be1103296254cb651fdfd05feeef
   m_configObjects: {}
