@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainManager : MonoBehaviour
+public class Fly_MainManager : MonoBehaviour
 {
     public GameObject[] gameObjects;
     public bool Hint_Gaegul = false;
-    public MainManager main_manager;
+    public Fly_MainManager main_manager;
 
     public float bgm_vol;
     public float sfx_vol;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class AllDialogue : MonoBehaviour
+public class Fly_AllDialogue : MonoBehaviour
 {
     public string[] sentences;
     private Scene scene;
@@ -28,12 +28,7 @@ public class AllDialogue : MonoBehaviour
             sentences = new string[] { "힌트를 얻었다!", "은혜 꼭 갚을게!!" };
         }
 
-        DialogueManager.instance.Ondialogue(sentences);
+        Fly_DialogueManager.instance.Ondialogue(sentences);
         Debug.Log("전달완료");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

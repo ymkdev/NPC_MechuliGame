@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class Fly_GameManager : MonoBehaviour
 {
     public float currentTime = 0.0f;
     private bool isTimerRunning = false;

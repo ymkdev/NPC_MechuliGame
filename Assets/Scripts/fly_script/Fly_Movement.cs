@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Movement : MonoBehaviour
+public class Fly_Movement : MonoBehaviour
 {
     public float minX, maxX;
     public float minY, maxY;
@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
             isCatch = true;
 
             moveSpeed = 0;
-            GameObject.Find("GameManager").GetComponent<GameManager>().score++;
+            GameObject.Find("GameManager").GetComponent<Fly_GameManager>().score++;
             //Invoke("DestroyFly", 2);
             
         }
