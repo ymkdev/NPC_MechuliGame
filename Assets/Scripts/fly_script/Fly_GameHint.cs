@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameHint : MonoBehaviour
+public class Fly_GameHint : MonoBehaviour
 {
     public GameObject HintCard;
     public GameObject HintImage;
@@ -30,7 +30,7 @@ public class GameHint : MonoBehaviour
             else
             {
                 //HintCard.SetActive(false);
-                GameObject.Find("MainManager").GetComponent<MainManager>().Hint_Gaegul = true;
+                GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul = true;
                 SceneManager.LoadScene("AfterClearScene");
             }
         }

@@ -17,7 +17,7 @@ public class seq_SoundManager : MonoBehaviour
     void Awake()
     {
        
-        var objs = FindObjectsOfType<SoundManager>();
+        var objs = FindObjectsOfType<Fly_SoundManager>();
         if(objs.Length == 1)
         {
             Debug.Log("³ª¿È");

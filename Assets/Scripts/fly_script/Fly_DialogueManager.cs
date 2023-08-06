@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class DialogueManager : MonoBehaviour
+public class Fly_DialogueManager : MonoBehaviour
 {
     public Text dialogueText;
     public GameObject arrow;
@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     public Text NameText;
     public Sprite[] changeChar;
 
-    public static DialogueManager instance;
+    public static Fly_DialogueManager instance;
 
     public Scene scene;
 

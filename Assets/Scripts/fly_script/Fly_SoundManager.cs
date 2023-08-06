@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundManager : MonoBehaviour
+public class Fly_SoundManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static SoundManager instance;
+    public static Fly_SoundManager instance;
     public AudioClip[] audio_clips;
     AudioSource bgm_player;
     AudioSource sfx_player;

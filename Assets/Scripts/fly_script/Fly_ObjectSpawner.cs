@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectSpawner : MonoBehaviour
+public class Fly_ObjectSpawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject flyPrefab;

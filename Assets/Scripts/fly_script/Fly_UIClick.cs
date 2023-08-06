@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class UIClick : MonoBehaviour
+public class Fly_UIClick : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Btn;
@@ -26,7 +26,7 @@ public class UIClick : MonoBehaviour
         Debug.Log("힌트 버튼 클릭");
         Box[0].SetActive(true);
         Debug.Log(Box[0]);
-        if (GameObject.Find("MainManager").GetComponent<MainManager>().Hint_Gaegul == true)
+        if (GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul == true)
         {
             foreach(GameObject obj in Hint) //힌트 획득 한 후에 클릭 시 힌트들 보이게
             {
