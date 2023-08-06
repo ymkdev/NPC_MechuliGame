@@ -17,6 +17,6 @@ public class NextScenario5 : MonoBehaviour
 
 
         //임시 설정.. 추후에 어디로 화면 넘길지 수정
-        SceneManager.LoadScene("BaneulTalk");
+        SceneManager.LoadScene("MainMap_1");
     }
 }

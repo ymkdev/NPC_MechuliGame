@@ -4,12 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class BaneulMovetoRule : MonoBehaviour
+public class BaneulGoToMain : MonoBehaviour
 {
     public void Update()
     {
         if (Input.GetMouseButtonDown(0))
-            SceneManager.LoadScene("ShopRuleScene");
+            SceneManager.LoadScene("MainMap_1");
     }
 }
-
