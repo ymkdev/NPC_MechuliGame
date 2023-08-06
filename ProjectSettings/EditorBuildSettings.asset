@@ -39,6 +39,15 @@ EditorBuildSettings:
     path: Assets/Scenes/bugi/Seq_Hint.unity
     guid: 0d5d67fdef09bbf4aa2ecba04bde03d2
   - enabled: 1
+    path: Assets/Scenes/shop/startPart/ChuChuTalk.unity
+    guid: cf09d5de6141e3448802d84617f613a7
+  - enabled: 1
+    path: Assets/Scenes/shop/startPart/StartScenario.unity
+    guid: f91b8c2029560d240a4cef3898eeb412
+  - enabled: 1
+    path: Assets/Scenes/shop/startPart/StartScene.unity
+    guid: d4755f9cf39a20f468e6554802714368
+  - enabled: 1
     path: Assets/Scenes/bugi/Seq_Level1.unity
     guid: c455cb8828c74a547a2a616fca90f1fc
   - enabled: 1
@@ -47,6 +56,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tori/tori_Intro.unity
     guid: 452520d7af0501b438d1b513ad1fb523
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/ShopGameScene.unity
+    guid: 41b35bb0e6319b944803c2aa1bb876f6
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/ShoppingGetHint.unity
+    guid: 2fac83ca070acc141b63c6734e52af9a
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/ShoppingHintScene.unity
+    guid: a2df7303b9c26c8449e588f470ec0508
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/ShopRuleScene.unity
+    guid: bb3f77dd4f8b7f44f9fd339d9cae67e2
   - enabled: 1
     path: Assets/Scenes/tori/tori_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -107,6 +128,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fly/TestScene.unity
     guid: 4390f1ae2e97c0c4aac271a78386f427
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulEndTalk1.unity
+    guid: 7bc3c356e7a4996409b7b5ec4e312867
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulEndTalk2.unity
+    guid: 340754e63ea60474dbc98c2a0310c187
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk2.unity
+    guid: 4c71e4e54d598dd4c9b42aa1f117ab64
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk3.unity
+    guid: c96ebc17c6f42f04fb7278ca0c323540
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk4.unity
+    guid: d7b58f0bf90228043a95b7c9e0d5dbf9
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk5.unity
+    guid: dcffa70341c93e14582b596fd099ee0a
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk6.unity
+    guid: 80f8d48c381ab0747bce77f9eccb307f
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk7.unity
+    guid: 886d53196afac234781d0f3d52d4399b
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk8.unity
+    guid: 131d8ddb28fd17946a737fe867f48689
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk9.unity
+    guid: 0b70ea824da97ca409bb9446b4be1fd2
   - enabled: 1
     path: Assets/Scenes/fly/HintScene.unity
     guid: 6ee80f08701c07c43bcd0708b43da8fb
