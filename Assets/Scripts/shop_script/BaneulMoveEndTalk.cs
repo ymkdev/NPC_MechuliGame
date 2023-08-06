@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 
-
-public class BaneulMovetoEndtalk : MonoBehaviour
+public class BaneulMoveEndTalk : MonoBehaviour
 {
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("click this Scene!!!");
+            Debug.Log("click the hint!!!");
             SceneManager.LoadScene("BaneulEndTalk1");
+
         }
     }
-
 }
