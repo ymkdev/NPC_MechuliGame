@@ -72,7 +72,7 @@ public class test : MonoBehaviour
 
         SceneManager.LoadScene("dangdang_gameMethod");
 
-        SceneManager.LoadScene("gameMethod");
+        //SceneManager.LoadScene("gameMethod");
 
     }
     // Update is called once per frame

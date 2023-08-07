@@ -22,7 +22,7 @@ public class hintScriptto : MonoBehaviour
 
         SceneManager.LoadScene("dangdang_hintAnddialogue1");
 
-        SceneManager.LoadScene("dialoggue 1");
+        //SceneManager.LoadScene("dialoggue 1");
 
     }
 
