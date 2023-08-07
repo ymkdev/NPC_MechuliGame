@@ -8,7 +8,6 @@ public class Onclick_Guess : MonoBehaviour
     public Button GuessBtn;
     public GameObject exit;
     public GameObject myhint;
-    public Text myhinttext;
     public GameObject temp;
 
     public void Guess_clicked()
@@ -17,9 +16,6 @@ public class Onclick_Guess : MonoBehaviour
         myhint.gameObject.SetActive(true);
         exit.gameObject.SetActive(true);
         temp.gameObject.SetActive(true);
-
-        pic_DataManager.instance.LoadData();
-        ShowAllHints();
     }
 
     public void Exit_clicked()
@@ -28,18 +24,5 @@ public class Onclick_Guess : MonoBehaviour
         myhint.gameObject.SetActive(false);
         exit.gameObject.SetActive(false);
         temp.gameObject.SetActive(false);
-    }
-
-    private void ShowAllHints()
-    {
-        List<string> hints = pic_DataManager.instance.nowPlayer.hints;
-        string allHintsText = "";
-
-        foreach (string hint in hints)
-        {
-            allHintsText += hint + "\n";
-        }
-
-        myhinttext.text = allHintsText;
     }
 }

@@ -12,7 +12,7 @@ public class GameMethod : MonoBehaviour
 
             SceneManager.LoadScene("dangdang_MainScene");
 
-            SceneManager.LoadScene("MainScene");
+            //SceneManager.LoadScene("MainScene");
 
 
     }
