@@ -44,17 +44,24 @@ public class Fly_UIClick : MonoBehaviour
     public void Setting_ToMainClick()
     {
         Debug.Log("메인으로 버튼 클릭");
-        //MainScene으로이동
+        //MainMap으로이동
         Close();
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("MainMap_1");
 
     }
 
     public void Setting_RetryClick()
     {
+
+        /*int idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex; 모두 연결 후 주석 해제
+
         Debug.Log("이 게임 Lv1부터 다시 시작하기");
         Close();
-        SceneManager.LoadScene("GameScene");
+        
+        if (idx == 0)
+            SceneManager.LoadScene("SampleScene");
+        else if (idx == 2)
+            SceneManager.LoadScene("fly_GameScene");*/
     }
 
     public void Setting_RuleClick()

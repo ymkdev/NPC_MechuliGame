@@ -11,14 +11,16 @@ public class Fly_MainManager : MonoBehaviour
     public float bgm_vol;
     public float sfx_vol;
 
+
     // Start is called before the first frame update
     private void Awake()
     {
-        foreach (GameObject obj in gameObjects)
+        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2; -> 모두 연결 후 주석 해제
+        /*foreach (GameObject obj in gameObjects)
         {
             DontDestroyOnLoad(obj);
             Debug.Log(obj.name);
-        }
+        }*/
 
     }
 
