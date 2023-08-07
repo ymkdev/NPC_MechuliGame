@@ -157,7 +157,6 @@ MonoBehaviour:
   homeDB: {fileID: 11400000, guid: 7f53da174088e354c84892ff2e5f6665, type: 2}
   artworkSprite: {fileID: 62224947}
   selectedOption_home: 0
-  A: {fileID: 0}
 --- !u!212 &62224947
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -3404,7 +3404,7 @@ MonoBehaviour:
   - {fileID: 52314298}
   - {fileID: 1613893340}
   Hint_Gaegul: 0
-  main_manager: {fileID: 0}
+  main_manager: {fileID: 1796967214}
   bgm_vol: 0
   sfx_vol: 0
 --- !u!1 &1837954186

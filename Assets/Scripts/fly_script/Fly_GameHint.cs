@@ -30,7 +30,7 @@ public class Fly_GameHint : MonoBehaviour
             else
             {
                 //HintCard.SetActive(false);
-                GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul = true;
+                //GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul = true; - 모두 연결 후 주석해제
                 SceneManager.LoadScene("AfterClearScene");
             }
         }
