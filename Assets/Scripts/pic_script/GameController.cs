@@ -28,10 +28,10 @@ public class GameController : MonoBehaviour
     public GameObject next;
     public GameObject temporary;
 
-    void Awake()
-    {
-        puzzles = Resources.LoadAll<Sprite>("Sprites/Card");
-    }
+    //void Awake()
+    //{
+        //puzzles = Resources.LoadAll<Sprite>("Sprites/Card");
+    //}
 
     void Start()
     {
