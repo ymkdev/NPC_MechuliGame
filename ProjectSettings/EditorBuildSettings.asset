@@ -96,7 +96,7 @@ EditorBuildSettings:
     path: Assets/Scenes/fly/FailScene.unity
     guid: 0134e497a91e68e4f808a87d19f326a4
   - enabled: 1
-    path: Assets/Scenes/fly/GameScene_2.unity
+    path: Assets/Scenes/fly/fly_GameScene.unity
     guid: 0c28081d797d6d746a77ec75f33fb3b1
   - enabled: 1
     path: Assets/Scenes/fly/fly_MainScene.unity
@@ -165,7 +165,7 @@ EditorBuildSettings:
     path: Assets/Scenes/fly/fly_MainScene.unity
     guid: b2bc40e029b04324e856b950b309acf4
   - enabled: 1
-    path: Assets/Scenes/fly/GameScene_2.unity
+    path: Assets/Scenes/fly/fly_GameScene.unity
     guid: 0c28081d797d6d746a77ec75f33fb3b1
   - enabled: 1
     path: Assets/Scenes/fly/FailScene.unity
