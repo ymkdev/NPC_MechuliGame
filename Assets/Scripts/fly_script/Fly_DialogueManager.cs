@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Fly_DialogueManager : MonoBehaviour
 {
     public Text dialogueText;
-    public GameObject arrow;
+    public GameObject dialogueBox;
     public CanvasGroup dialogueGroup;
 
     public Queue<string> sentences;
@@ -96,10 +96,11 @@ public class Fly_DialogueManager : MonoBehaviour
                
             }
            index++;
-           //코루틴
-           isTyping = true;
-           arrow.SetActive(false);
-           StartCoroutine(Typing(currentSentence));
+            //코루틴
+            /*isTyping = true;
+            arrow.SetActive(false);
+            StartCoroutine(Typing(currentSentence));*/
+            dialogueText.text = currentSentence;
         }
         else
         {
@@ -109,11 +110,13 @@ public class Fly_DialogueManager : MonoBehaviour
                 SceneManager.LoadScene("fly_GameScene");
             else if ((scene.name).Equals("ClearScene"))
                 SceneManager.LoadScene("TestScene");
+            else
+                SceneManager.LoadScene("MainMap_1"); //ToMainMap_1
         }
     }
 
     //타이핑효과 코루틴
-    IEnumerator Typing(string line)
+    /*IEnumerator Typing(string line)
     {
         dialogueText.text = "";
         foreach (char letter in line.ToCharArray())
@@ -121,9 +124,10 @@ public class Fly_DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed); //속도조절
         }
-    }
+    }*/
 
-    private void Update()
+
+    /*private void Update()
     {
         //dialogueText == currentSentence 이면 대사 한줄 끝
         if (dialogueText.text.Equals(currentSentence)) //메인씬에서 대화 끝나면 화살표 노출
@@ -133,7 +137,7 @@ public class Fly_DialogueManager : MonoBehaviour
             isTyping = false;
             Debug.Log("한줄 끝");
         }
-    }
+    }*/
 
     /* public void OnPointerDown(PointerEventData eventData) // 터치시
      {
