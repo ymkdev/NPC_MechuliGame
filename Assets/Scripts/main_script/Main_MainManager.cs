@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class Main_MainManager : MonoBehaviour
 {
-    public int gameIndex;
-    public GameObject[] gameObjects;
+    public int gameIndex = -1;
+    public GameObject[] DontDestroy_Objects;
 
-    
     // Start is called before the first frame update
     void Awake()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
-        foreach (GameObject obj in gameObjects)
+
+        foreach (GameObject obj in DontDestroy_Objects)
         {
             DontDestroyOnLoad(obj);
             Debug.Log(obj.name);
         }
+
     }
 
     // Update is called once per frame
