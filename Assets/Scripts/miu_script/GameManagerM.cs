@@ -34,8 +34,11 @@ public class GameManagerM : MonoBehaviour
     public GameObject reButton1;
     public GameObject reButton2;
     public GameObject reButton3;
-
-    public void NextStage() //���� ���������� �Ѿ��
+    private void Awake()
+    {
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 0;
+    }
+        public void NextStage() //���� ���������� �Ѿ��
     {
         if (stageIndex < Stages.Length - 1)
         {
