@@ -17,8 +17,12 @@ public class Main_UIClick : MonoBehaviour
     {
         foreach (GameObject box in Box)
             box.SetActive(false);
-        idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex;
 
+    }
+
+    private void Update()
+    {
+        idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex;
     }
     public void HintBtnClick()
     {
@@ -27,6 +31,7 @@ public class Main_UIClick : MonoBehaviour
 
     public void SettingBtnClick()
     {
+        TimePause();
         Debug.Log("설정 버튼 클릭");
         Box[1].SetActive(true);
         Debug.Log(Box[1]);
@@ -44,11 +49,17 @@ public class Main_UIClick : MonoBehaviour
     public void Setting_RetryClick()
     {
 
-        Debug.Log("이 게임 Lv1부터 다시 시작하기");
+        Debug.Log("이 게임 Lv1부터 다시 시작하기"+idx);
         Close();
-
+        string currentScene = SceneManager.GetActiveScene().name;
+        
         if (idx == 0)
+        {
+            Debug.Log("현재 씬 unload");
+            SceneManager.UnloadSceneAsync(currentScene);
             SceneManager.LoadScene("SampleScene_Mieu");
+
+        }
         else if (idx == 2)
             SceneManager.LoadScene("fly_GameScene");
         //SceneManager.LoadScene($"GameScene_{idx}");
@@ -61,12 +72,14 @@ public class Main_UIClick : MonoBehaviour
 
     public void SoundBtnClick()
     {
+        
         Debug.Log("소리 버튼 클릭");
         Box[2].SetActive(true);
         Debug.Log(Box[2]);
     }
     public void Close()
     {
+        TimeStart();
         if (Box[0].activeSelf)
             Box[0].SetActive(false);
         else if (RuleImage.activeSelf)
@@ -77,4 +90,13 @@ public class Main_UIClick : MonoBehaviour
             Box[2].SetActive(false);
     }
     
+    public void TimePause()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void TimeStart()
+    {
+        Time.timeScale = 1;
+    }
 }
