@@ -749,14 +749,13 @@ GameObject:
   - component: {fileID: 192214645}
   - component: {fileID: 192214644}
   - component: {fileID: 192214643}
-  - component: {fileID: 192214646}
   m_Layer: 5
   m_Name: hintButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &192214642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -859,18 +858,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192214641}
   m_CullTransparentMesh: 1
---- !u!114 &192214646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 192214641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4592f6b8cc2854c8f027504d6b47b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &261429987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,14 +1942,13 @@ GameObject:
   - component: {fileID: 567825554}
   - component: {fileID: 567825553}
   - component: {fileID: 567825552}
-  - component: {fileID: 567825555}
   m_Layer: 5
   m_Name: settingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &567825551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2066,18 +2052,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567825550}
   m_CullTransparentMesh: 1
---- !u!114 &567825555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567825550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c27906ea883e3384081d95ae2339abdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &597729374
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,7 +4691,7 @@ Animator:
   m_GameObject: {fileID: 1486391718}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe53fd8c60af3094c9f88ce0e1b25887, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5261,14 +5235,13 @@ GameObject:
   - component: {fileID: 1617614743}
   - component: {fileID: 1617614742}
   - component: {fileID: 1617614741}
-  - component: {fileID: 1617614744}
   m_Layer: 5
   m_Name: soundButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1617614740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5371,18 +5344,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617614739}
   m_CullTransparentMesh: 1
---- !u!114 &1617614744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617614739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783bc7e38cce03543a67716470eede99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1621456739
 GameObject:
   m_ObjectHideFlags: 0
@@ -5462,8 +5423,6 @@ GameObject:
   - component: {fileID: 1660724683}
   - component: {fileID: 1660724682}
   - component: {fileID: 1660724684}
-  - component: {fileID: 1660724686}
-  - component: {fileID: 1660724685}
   - component: {fileID: 1660724687}
   m_Layer: 0
   m_Name: white
@@ -5560,40 +5519,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1660724685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660724681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25f494392fa05f4d86e189e1acbdf17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LeftMove: 0
-  RightMove: 0
---- !u!95 &1660724686
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660724681}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!61 &1660724687
 BoxCollider2D:
   m_ObjectHideFlags: 0
