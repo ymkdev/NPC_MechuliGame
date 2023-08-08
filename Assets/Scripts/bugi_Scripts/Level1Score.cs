@@ -1,9 +1,12 @@
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Level1Score : MonoBehaviour
 {
@@ -11,7 +14,7 @@ public class Level1Score : MonoBehaviour
     //public GameManager gameManager;
     //Timer.timer = 30.0f;
 
-    public AudioSource bgm;
+    //public AudioSource bgm;
 
     //public GameObject way; 
 
@@ -135,7 +138,7 @@ public class Level1Score : MonoBehaviour
         }
 
     }
-    public static void Retry() // »ç¿ë ¾È ÇÔ
+    public static void Retry() // ì‚¬ìš© ì•ˆ í•¨
     {
         Fail.failGoal = false;
         //DontDestroyOnLoad(gameObject);
