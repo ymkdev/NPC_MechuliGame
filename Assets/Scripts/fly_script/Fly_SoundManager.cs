@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,7 +30,7 @@ public class Fly_SoundManager : MonoBehaviour
 
         switch (type) {
             case "CatchFiles_Catch":
-                Debug.Log("ÆÄ¸® ÀâÀº È¿°úÀ½ Àç»ı");
+                Debug.Log("íŒŒë¦¬ ì¡ì€ íš¨ê³¼ìŒ ì¬ìƒ");
                 index = 1; break;
         }
 

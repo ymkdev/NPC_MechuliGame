@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,15 +35,15 @@ public class Main_UIClick : MonoBehaviour
     public void SettingBtnClick()
     {
         TimePause();
-        Debug.Log("¼³Á¤ ¹öÆ° Å¬¸¯");
+        Debug.Log("ì„¤ì • ë²„íŠ¼ í´ë¦­");
         Box[1].SetActive(true);
         Debug.Log(Box[1]);
     }
 
     public void Setting_ToMainClick()
     {
-        Debug.Log("¸ŞÀÎÀ¸·Î ¹öÆ° Å¬¸¯");
-        //MainMapÀ¸·ÎÀÌµ¿
+        Debug.Log("ë©”ì¸ìœ¼ë¡œ ë²„íŠ¼ í´ë¦­");
+        //MainMapìœ¼ë¡œì´ë™
         Close();
         SceneManager.LoadScene("MainMap_1");
 
@@ -52,13 +52,13 @@ public class Main_UIClick : MonoBehaviour
     public void Setting_RetryClick()
     {
 
-        Debug.Log("ÀÌ °ÔÀÓ Lv1ºÎÅÍ ´Ù½Ã ½ÃÀÛÇÏ±â"+idx);
+        Debug.Log("ì´ ê²Œì„ Lv1ë¶€í„° ë‹¤ì‹œ ì‹œì‘í•˜ê¸°"+idx);
         Close();
         string currentScene = SceneManager.GetActiveScene().name;
         
         if (idx == 0)
         {
-            Debug.Log("ÇöÀç ¾À unload");
+            Debug.Log("í˜„ì¬ ì”¬ unload");
             SceneManager.UnloadSceneAsync(currentScene);
             SceneManager.LoadScene("SampleScene_Mieu");
 
@@ -69,22 +69,23 @@ public class Main_UIClick : MonoBehaviour
     }
 
     public void Setting_RuleClick()
-    {
-        Debug.Log("°ÔÀÓ ¹æ¹ı º¸¿©Áü");
-        RuleImage.SetActive(true);
-
+    { 
+        if (idx != -1)
+        {
+            RuleImage.SetActive(true);
+            Debug.Log("ê²Œì„ ë°©ë²• ë³´ì—¬ì§");
+        }
     }
 
     public void SoundBtnClick()
     {
         
-        Debug.Log("¼Ò¸® ¹öÆ° Å¬¸¯");
+        Debug.Log("ì†Œë¦¬ ë²„íŠ¼ í´ë¦­");
         Box[2].SetActive(true);
         Debug.Log(Box[2]);
     }
     public void Close()
     {
-        // RuleImage ?œì„±???íƒœ??ê²½ìš° ë¹„í™œ?±í™” ì²˜ë¦¬
         if (RuleImage.activeSelf)
         {
             RuleImage.SetActive(false);
@@ -97,7 +98,7 @@ public class Main_UIClick : MonoBehaviour
             {
                 Box[i].SetActive(false);
                 TimeStart();
-                break; // ?œì„±?”ëœ ?”ì†Œë¥?ì°¾ì•˜?¤ë©´ ë£¨í”„ ì¢…ë£Œ
+                break;
             }
         }
 

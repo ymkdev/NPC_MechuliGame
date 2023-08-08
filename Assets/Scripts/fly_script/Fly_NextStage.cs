@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +8,7 @@ public class Fly_NextStage : MonoBehaviour
     // Start is called before the first frame update
     public void OnMouseDown()
     {
-        Debug.Log("º∫∞¯ ≈¨∏Ø");
+        Debug.Log("ÏÑ±Í≥µ ÌÅ¥Î¶≠");
         GameManager.GetComponent<Fly_GameManager>().NextStage();
     }
 }

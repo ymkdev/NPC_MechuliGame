@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Fly_Movement : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class Fly_Movement : MonoBehaviour
     {
         if (!isCatch)
         {
-            Debug.Log("Å¬¸¯ÇÔ");
+            Debug.Log("í´ë¦­í•¨");
             //SoundManager.instance.PlaySound("CatchFiles_Catch");
 
             transform.GetComponent<SpriteRenderer>().sprite = changeSprite[0];
@@ -32,8 +32,8 @@ public class Fly_Movement : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("Sample_Movements.cs ½ÇÇàÁß");
-        if(Time.time >= startTime) //°ÔÀÓÀÌ ½ÃÀÛÇÏ°í startTime Áö³­ ÈÄ ½ÇÇà
+        Debug.Log("Sample_Movements.cs ì‹¤í–‰ì¤‘");
+        if(Time.time >= startTime) //ê²Œì„ì´ ì‹œì‘í•˜ê³  startTime ì§€ë‚œ í›„ ì‹¤í–‰
         {
             transform.position += new Vector3(moveSpeed * Time.deltaTime * Xdir, moveSpeed * Time.deltaTime * Ydir, 0);
        
@@ -52,7 +52,7 @@ public class Fly_Movement : MonoBehaviour
     }
     private void DestroyFly()
     {
-        Debug.Log("DestoryFly½ÇÇà");
+        Debug.Log("DestoryFlyì‹¤í–‰");
         Destroy(gameObject);
     }
 }

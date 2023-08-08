@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ public class Fly_ObjectSpawner : MonoBehaviour
         int x, y;
         int n;
 
-        Debug.Log("Spawn()½ÇÇà");
+        Debug.Log("Spawn()ì‹¤í–‰");
 
         if (isFirst)
         {
