@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 [System.Serializable]
 public class BaneulDialogue
@@ -57,7 +58,7 @@ public class BaneulTalking : MonoBehaviour
     {
         if (!isDialogue)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && EventSystem.current.IsPointerOverGameObject())
             {
                 if (count < dialogue.Length)
                     NextDialogue();
