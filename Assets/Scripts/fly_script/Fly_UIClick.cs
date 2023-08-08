@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,12 +23,12 @@ public class Fly_UIClick : MonoBehaviour
     }
     public void HintBtnClick()
     {
-        Debug.Log("ÈùÆ® ¹öÆ° Å¬¸¯");
+        Debug.Log("íŒíŠ¸ ë²„íŠ¼ í´ë¦­");
         Box[0].SetActive(true);
         Debug.Log(Box[0]);
         if (GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul == true)
         {
-            foreach(GameObject obj in Hint) //ÈùÆ® È¹µæ ÇÑ ÈÄ¿¡ Å¬¸¯ ½Ã ÈùÆ®µé º¸ÀÌ°Ô
+            foreach(GameObject obj in Hint) //íŒíŠ¸ íšë“ í•œ í›„ì— í´ë¦­ ì‹œ íŒíŠ¸ë“¤ ë³´ì´ê²Œ
             {
                 obj.SetActive(true);
             }
@@ -36,15 +36,15 @@ public class Fly_UIClick : MonoBehaviour
     }
     public void SettingBtnClick()
     {
-        Debug.Log("¼³Á¤ ¹öÆ° Å¬¸¯");
+        Debug.Log("ì„¤ì • ë²„íŠ¼ í´ë¦­");
         Box[1].SetActive(true);
         Debug.Log(Box[1]);
     }
 
     public void Setting_ToMainClick()
     {
-        Debug.Log("¸ŞÀÎÀ¸·Î ¹öÆ° Å¬¸¯");
-        //MainMapÀ¸·ÎÀÌµ¿
+        Debug.Log("ë©”ì¸ìœ¼ë¡œ ë²„íŠ¼ í´ë¦­");
+        //MainMapìœ¼ë¡œì´ë™
         Close();
         SceneManager.LoadScene("MainMap_1");
 
@@ -53,9 +53,9 @@ public class Fly_UIClick : MonoBehaviour
     public void Setting_RetryClick()
     {
 
-        /*int idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex; ¸ğµÎ ¿¬°á ÈÄ ÁÖ¼® ÇØÁ¦
+        /*int idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex; ëª¨ë‘ ì—°ê²° í›„ ì£¼ì„ í•´ì œ
 
-        Debug.Log("ÀÌ °ÔÀÓ Lv1ºÎÅÍ ´Ù½Ã ½ÃÀÛÇÏ±â");
+        Debug.Log("ì´ ê²Œì„ Lv1ë¶€í„° ë‹¤ì‹œ ì‹œì‘í•˜ê¸°");
         Close();
         
         if (idx == 0)
@@ -67,14 +67,14 @@ public class Fly_UIClick : MonoBehaviour
     public void Setting_RuleClick()
     {
         RuleImage.SetActive(true);
-        Debug.Log("°ÔÀÓ ¹æ¹ı º¸¿©Áü");
+        Debug.Log("ê²Œì„ ë°©ë²• ë³´ì—¬ì§");
         
 
     }
 
     public void SoundBtnClick()
     {
-        Debug.Log("¼Ò¸® ¹öÆ° Å¬¸¯");
+        Debug.Log("ì†Œë¦¬ ë²„íŠ¼ í´ë¦­");
         Box[2].SetActive(true);
         Debug.Log(Box[2]);
     }
@@ -92,9 +92,9 @@ public class Fly_UIClick : MonoBehaviour
 
     public void ShowHint()
     {
-        Debug.Log("¹öÆ° Å¬¸¯");
+        Debug.Log("ë²„íŠ¼ í´ë¦­");
         HintImage.SetActive(true); //AfterclearScene
-        Debug.Log("ÈùÆ® º¸¿©Áü");
+        Debug.Log("íŒíŠ¸ ë³´ì—¬ì§");
     }
     
 }

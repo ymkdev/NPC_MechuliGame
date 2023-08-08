@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +15,7 @@ public class Fly_MainManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2; -> ¸ğµÎ ¿¬°á ÈÄ ÁÖ¼® ÇØÁ¦
+        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2; -> ëª¨ë‘ ì—°ê²° í›„ ì£¼ì„ í•´ì œ
         /*foreach (GameObject obj in gameObjects)
         {
             DontDestroyOnLoad(obj);
