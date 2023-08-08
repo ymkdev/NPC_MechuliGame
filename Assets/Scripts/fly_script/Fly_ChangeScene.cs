@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,7 +13,6 @@ public class Fly_ChangeScene : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("fly_GameScene");
-        //Test
     }
 
 }

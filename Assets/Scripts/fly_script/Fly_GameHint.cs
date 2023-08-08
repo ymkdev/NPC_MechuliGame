@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,20 +24,20 @@ public class Fly_GameHint : MonoBehaviour
             if (isClick == false)
             {
                 isClick = true;
-                Debug.Log("ÈùÆ® Ä«µå Å¬¸¯");
+                Debug.Log("íŒíŠ¸ ì¹´ë“œ í´ë¦­");
                 HintImage.SetActive(true);
             }
             else
             {
                 //HintCard.SetActive(false);
-                //GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul = true; - ¸ğµÎ ¿¬°á ÈÄ ÁÖ¼®ÇØÁ¦
+                //GameObject.Find("MainManager").GetComponent<Fly_MainManager>().Hint_Gaegul = true; - ëª¨ë‘ ì—°ê²° í›„ ì£¼ì„í•´ì œ
                 SceneManager.LoadScene("AfterClearScene");
             }
         }
         
         if (this.gameObject == HintImage)
         {
-            Debug.Log("ÈùÆ® ÀÌ¹ÌÁö Å¬¸¯");
+            Debug.Log("íŒíŠ¸ ì´ë¯¸ì§€ í´ë¦­");
             HintImage.SetActive(false);
             HintCard.SetActive(true);
         }
