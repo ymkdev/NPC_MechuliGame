@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -75,7 +75,7 @@ public class DialogManager : MonoBehaviour
             SceneManager.LoadScene("Seq_Level1");
         }
         
-        /*if (cnt == 10) // before hint
+        /*if (cnt == 10) // 범인 잡기 씬으로 이동 구현
         {
             Debug.Log("2nd Dialog End");
             SceneManager.LoadScene("Hint");

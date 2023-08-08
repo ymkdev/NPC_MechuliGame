@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +20,7 @@ public class seq_SoundManager : MonoBehaviour
         var objs = FindObjectsOfType<Fly_SoundManager>();
         if(objs.Length == 1)
         {
-            Debug.Log("³ª¿È");
+            Debug.Log("ë‚˜ì˜´");
             DontDestroyOnLoad(gameObject);
            
         }

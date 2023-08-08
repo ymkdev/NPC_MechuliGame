@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class ResultFail : MonoBehaviour
 {
-    //public GameObject success; //UI¿ÀºêÁ§Æ®µéÀ» È°¼º/ºñÈ°¼ºÈ­ ¼º°ø
-    public GameObject failed; //½ÇÆĞ
+    //public GameObject success; //UIì˜¤ë¸Œì íŠ¸ë“¤ì„ í™œì„±/ë¹„í™œì„±í™” ì„±ê³µ
+    public GameObject failed; //ì‹¤íŒ¨
     //int result;
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class ResultFail : MonoBehaviour
         
         if (Fail.failGoal)
         {
-            failed.SetActive(true); //UI¿ÀºêÁ§Æ® È°¼ºÈ­
+            failed.SetActive(true); //UIì˜¤ë¸Œì íŠ¸ í™œì„±í™”
             //result = Mathf.FloorToInt(Timer.timer);
         }
 

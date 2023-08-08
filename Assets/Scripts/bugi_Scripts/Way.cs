@@ -23,6 +23,6 @@ public class Way : MonoBehaviour
     {
         WayPop.SetActive(false);
         GameWay.tf = true;
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 }
