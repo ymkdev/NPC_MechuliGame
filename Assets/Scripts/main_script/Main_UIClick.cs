@@ -8,6 +8,7 @@ public class Main_UIClick : MonoBehaviour
     // Start is called before the first frame update
     public GameObject Btn;
     public GameObject [] Box;
+    public Sprite [] RuleImageArray;
     public GameObject RuleImage;
     public int idx;
 
@@ -23,6 +24,8 @@ public class Main_UIClick : MonoBehaviour
     private void Update()
     {
         idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex;
+        if (idx != -1)
+            RuleImage.GetComponent<Image>().sprite = RuleImageArray[idx];
     }
     public void HintBtnClick()
     {
@@ -66,8 +69,12 @@ public class Main_UIClick : MonoBehaviour
     }
 
     public void Setting_RuleClick()
-    {
-        Debug.Log("게임 방법 보여짐");
+    { 
+        if (idx != -1)
+        {
+            RuleImage.SetActive(true);
+            Debug.Log("게임 방법 보여짐");
+        }
     }
 
     public void SoundBtnClick()
@@ -79,15 +86,22 @@ public class Main_UIClick : MonoBehaviour
     }
     public void Close()
     {
-        TimeStart();
-        if (Box[0].activeSelf)
-            Box[0].SetActive(false);
-        else if (RuleImage.activeSelf)
+        if (RuleImage.activeSelf)
+        {
             RuleImage.SetActive(false);
-        else if (Box[1].activeSelf)
-            Box[1].SetActive(false);
-        else if (Box[2].activeSelf)
-            Box[2].SetActive(false);
+            return;
+        }
+
+        for (int i = 0; i < Box.Length; i++)
+        {
+            if (Box[i].activeSelf)
+            {
+                Box[i].SetActive(false);
+                TimeStart();
+                break;
+            }
+        }
+
     }
     
     public void TimePause()
