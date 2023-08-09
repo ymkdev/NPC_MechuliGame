@@ -1,13 +1,13 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class pic_GetHint : MonoBehaviour
 {
-    public GameObject Hint; // ÈùÆ® ÀÌ¹ÌÁö
-    public GameObject HintEnv; //ÈùÆ®ºÀÅõ ÀÌ¹ÌÁö
-    public Button btnHint; // ÈùÆ® º¸±â ¹öÆ°
+    public GameObject Hint; // íŒíŠ¸ ì´ë¯¸ì§€
+    public GameObject HintEnv; //íŒíŠ¸ë´‰íˆ¬ ì´ë¯¸ì§€
+    public Button btnHint; // íŒíŠ¸ ë³´ê¸° ë²„íŠ¼
 
     public void ShowHint()
     {

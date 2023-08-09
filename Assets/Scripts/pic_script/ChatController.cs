@@ -1,17 +1,17 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-[System.Serializable] //Á÷Á¢ ¸¸µç class¿¡ Á¢±ÙÇÒ ¼ö ÀÖµµ·Ï ÇØÁÜ. 
+[System.Serializable] //ì§ì ‘ ë§Œë“  classì— ì ‘ê·¼í•  ìˆ˜ ìˆë„ë¡ í•´ì¤Œ. 
 public class pic_Dialogue
 {
-    [TextArea]//ÇÑÁÙ ¸»°í ¿©·¯ ÁÙ ¾µ ¼ö ÀÖ°Ô ÇØÁÜ
+    [TextArea]//í•œì¤„ ë§ê³  ì—¬ëŸ¬ ì¤„ ì“¸ ìˆ˜ ìˆê²Œ í•´ì¤Œ
     public string dialogue;
     public string name;
-    public Sprite cg; // ±³Ã¼µÉ ÀÌ¹ÌÁö
+    public Sprite cg; // êµì²´ë  ì´ë¯¸ì§€
 }
 
 public class ChatController : MonoBehaviour
@@ -20,12 +20,12 @@ public class ChatController : MonoBehaviour
     public GameObject no;
 
 
-    //SerializeField : inspectorÃ¢¿¡¼­ Á÷Á¢ Á¢±ÙÇÒ ¼ö ÀÖµµ·Ï ÇÏ´Â º¯¼öÀÓ.
-    [SerializeField] private SpriteRenderer sprite_StandingCG; //Ä³¸¯ÅÍ ÀÌ¹ÌÁö(YK)¸¦ Á¦¾îÇÏ±â À§ÇÑ º¯¼ö
-    [SerializeField] private Text txt_Dialogue; // ÅØ½ºÆ®¸¦ Á¦¾îÇÏ±â À§ÇÑ º¯¼ö
+    //SerializeField : inspectorì°½ì—ì„œ ì§ì ‘ ì ‘ê·¼í•  ìˆ˜ ìˆë„ë¡ í•˜ëŠ” ë³€ìˆ˜ì„.
+    [SerializeField] private SpriteRenderer sprite_StandingCG; //ìºë¦­í„° ì´ë¯¸ì§€(YK)ë¥¼ ì œì–´í•˜ê¸° ìœ„í•œ ë³€ìˆ˜
+    [SerializeField] private Text txt_Dialogue; // í…ìŠ¤íŠ¸ë¥¼ ì œì–´í•˜ê¸° ìœ„í•œ ë³€ìˆ˜
     [SerializeField] private Text txt_Name;
 
-    private int count = 0; //´ë»ç°¡ ¾ó¸¶³ª ÁøÇàµÆ´ÂÁö ¾Ë·ÁÁÙ º¯¼ö
+    private int count = 0; //ëŒ€ì‚¬ê°€ ì–¼ë§ˆë‚˜ ì§„í–‰ëëŠ”ì§€ ì•Œë ¤ì¤„ ë³€ìˆ˜
 
     [SerializeField] private pic_Dialogue[] dialogue;
 
@@ -36,7 +36,7 @@ public class ChatController : MonoBehaviour
 
     private void NextDialogue()
     {
-        //Ã¹¹øÂ° ´ë»ç¿Í Ã¹¹øÂ° cgºÎÅÍ °è¼Ó ´ÙÀ½ cg·Î ÁøÇàµÇ¸é¼­ È­¸é¿¡ º¸ÀÌ°Ô µÈ´Ù.
+        //ì²«ë²ˆì§¸ ëŒ€ì‚¬ì™€ ì²«ë²ˆì§¸ cgë¶€í„° ê³„ì† ë‹¤ìŒ cgë¡œ ì§„í–‰ë˜ë©´ì„œ í™”ë©´ì— ë³´ì´ê²Œ ëœë‹¤.
         if (count == dialogue.Length)
         {
             SceneManager.LoadScene("pic_Methodscene");
@@ -46,7 +46,7 @@ public class ChatController : MonoBehaviour
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_Name.text = dialogue[count].name;
         sprite_StandingCG.sprite = dialogue[count].cg;
-        count++; //´ÙÀ½ ´ë»ç¿Í cg°¡ ³ª¿Àµµ·Ï 
+        count++; //ë‹¤ìŒ ëŒ€ì‚¬ì™€ cgê°€ ë‚˜ì˜¤ë„ë¡ 
     }
 
     public void Yes_clicked()
@@ -58,20 +58,29 @@ public class ChatController : MonoBehaviour
         NextDialogue();
     }
 
+    public void No_clicked()
+    {
+        print("No_clicked");
+        print(count); // count == 6
+        yes.gameObject.SetActive(false);
+        no.gameObject.SetActive(false);
+        SceneManager.LoadScene("MainMap_1");
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // ¸¶¿ì½º Å¬¸¯ À§Ä¡¸¦ Ä«¸Ş¶ó ½ºÅ©¸° ¿ùµåÆ÷ÀÎÆ®·Î º¯°æÇÕ´Ï´Ù.
+            // ë§ˆìš°ìŠ¤ í´ë¦­ ìœ„ì¹˜ë¥¼ ì¹´ë©”ë¼ ìŠ¤í¬ë¦° ì›”ë“œí¬ì¸íŠ¸ë¡œ ë³€ê²½í•©ë‹ˆë‹¤.
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // RaycastÇÔ¼ö¸¦ ÅëÇØ ºÎµúÄ¡´Â collider¸¦ hit¿¡ ¸®ÅÏ¹Ş½À´Ï´Ù.
+            // Raycastí•¨ìˆ˜ë¥¼ í†µí•´ ë¶€ë”ªì¹˜ëŠ” colliderë¥¼ hitì— ë¦¬í„´ë°›ìŠµë‹ˆë‹¤.
             RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
 
             if (hit.collider != null)
             {
-                // ¾î¶² ¿ÀºêÁ§Æ®ÀÎÁö ·Î±×¸¦ Âï½À´Ï´Ù.
+                // ì–´ë–¤ ì˜¤ë¸Œì íŠ¸ì¸ì§€ ë¡œê·¸ë¥¼ ì°ìŠµë‹ˆë‹¤.
                 Debug.Log(hit.collider.name);
 
                 if (hit.collider.name == "Dialog Bar")

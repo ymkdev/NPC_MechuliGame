@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +27,7 @@ public class GameDirector : MonoBehaviour
             temporary.gameObject.SetActive(true);
             fail.gameObject.SetActive(true);
             retry.gameObject.SetActive(true);
-            //Debug.Log("°ÔÀÓ Á¾·á");
+            //Debug.Log("ê²Œìž„ ì¢…ë£Œ");
         }
         else
         {
