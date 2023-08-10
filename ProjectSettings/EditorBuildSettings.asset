@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/dangdang/dangdang_dialogue.unity
     guid: e38102b867b442943a3ca7c0f82fe5ce
   - enabled: 1
-    path: Assets/Scenes/bugi/EndScene.unity
+    path: Assets/Scenes/end/EndScene.unity
     guid: 07d1539bcd9dfc3478a70bf0667afb7d
   - enabled: 1
     path: Assets/Scenes/bugi/Seq_EndDialog.unity

@@ -19,6 +19,7 @@ public class DialogManager : MonoBehaviour
     public void Begin(Dialog info)
     {
         //cnt = 0;
+        //DialogTrigger.Trigger();
         sentences.Clear();
         names.Clear();
 
@@ -40,7 +41,7 @@ public class DialogManager : MonoBehaviour
         Debug.Log(cnt);
         cnt = cnt + 1;
 
-        if (cnt == 3 || cnt == 9)
+        if (cnt == 3 || cnt == 8)
         {
             chuchu.SetActive(true);
             boogie.SetActive(false);
@@ -51,12 +52,22 @@ public class DialogManager : MonoBehaviour
             chuchu.SetActive(false);
         }  
         
-      if(sentences.Count == 0 && names.Count == 0)
+      if(sentences.Count == 0 && names.Count == 0 && cnt == 7)
         {
-            End();
+            //End();
+
+            Debug.Log("1st Dialog End");
+            SceneManager.LoadScene("Seq_Level1");
             return;
         }
+        if (sentences.Count == 0 && names.Count == 0 && cnt >=8)
+        {
+            //End();
 
+            Debug.Log("2nd Dialog End");
+            SceneManager.LoadScene("startCrime");
+            return;
+        }
         /*if (names.Count == 0)
         {
             End();
@@ -67,7 +78,7 @@ public class DialogManager : MonoBehaviour
         txtName.text = names.Dequeue();
     }
 
-    public void End()
+    /*public void End()
     {
         if (cnt == 8) // before game start
         {
@@ -75,15 +86,15 @@ public class DialogManager : MonoBehaviour
             SceneManager.LoadScene("Seq_Level1");
         }
         
-        /*if (cnt == 10) // 범인 잡기 씬으로 이동 구현
+        *//*if (cnt == 10) // 범인 잡기 씬으로 이동 구현
         {
             Debug.Log("2nd Dialog End");
             SceneManager.LoadScene("Hint");
-        }*/
+        }*//*
         
     }
     void Start()
     {
         
-    }
+    }*/
 }
