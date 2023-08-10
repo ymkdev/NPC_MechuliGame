@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartMusic_Miu : MonoBehaviour
 {
@@ -14,5 +15,19 @@ public class StartMusic_Miu : MonoBehaviour
 
         DontDestroyOnLoad(BackgroundMusic); //������� ��� ����ϰ�(���� ��ư�Ŵ������� ����)
 
+    }
+    void Update()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "MainMap_1")
+        {
+            
+            Destroy(gameObject);
+        }
+        if (scene.name == "startCrime")
+        {
+            
+            Destroy(gameObject);
+        }
     }
 }

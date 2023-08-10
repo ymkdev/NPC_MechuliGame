@@ -9,6 +9,7 @@ public class HintScript : MonoBehaviour
     public GameObject letterUnopen;
     public GameObject HintOpen;
     public GameObject StoryThanks;
+    public CrimeMain cm;
 
     public GameObject TalkC1;
     public GameObject nameC;
@@ -21,6 +22,13 @@ public class HintScript : MonoBehaviour
     {
         
     }
+    
+    private void Awake()
+    {
+        cm.MgameIndex = 1;
+        //GameObject.Find("CrimeMain").GetComponent<CrimeMain>().MgameIndex = 1;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -39,14 +47,14 @@ public class HintScript : MonoBehaviour
                     //Hint.SetActive(true);
                     //Debug.Log(click_obj.name);
                 //}
-                if (click_obj.name == "letterHint") //¿­¸° ÆíÁöÁö Å¬¸¯ -> ´ëÈ­Ã¢À¸·Î ³Ñ¾î°¡±â
+                if (click_obj.name == "letterHint") //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ -> ï¿½ï¿½È­Ã¢ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½
                 {
                     
                     HintOpen.SetActive(false);
                     StoryThanks.SetActive(true);
                     Debug.Log(click_obj.name);
                 }
-                if (click_obj.name == "letterUnopen") //ÆíÁöÁö ¿­±â
+                if (click_obj.name == "letterUnopen") //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 {
                     Hint.SetActive(false);
                     HintOpen.SetActive(true);
@@ -56,7 +64,7 @@ public class HintScript : MonoBehaviour
                 {
                     TalkC1.SetActive(false);
                     nameC.SetActive(false);
-                    ChuChu.SetActive(false); //ÃßÃß ´ëÈ­Ã¢ Áö¿ì±â
+                    ChuChu.SetActive(false); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­Ã¢ ï¿½ï¿½ï¿½ï¿½ï¿½
 
                     TalkM.SetActive(true);
                     nameM.SetActive(true);
@@ -68,7 +76,7 @@ public class HintScript : MonoBehaviour
 
     public void letterClick()
     {
-        letterUnopen.SetActive(true); //¹öÆ° Å¬¸¯À¸·Î ÆíÁö µîÀå
+        letterUnopen.SetActive(true); //ï¿½ï¿½Æ° Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
  
 }
