@@ -101,18 +101,40 @@ public class Main_UIClick : MonoBehaviour
 
         Debug.Log("이 게임 Lv1부터 다시 시작하기"+idx);
         Close();
-        string currentScene = SceneManager.GetActiveScene().name;
-        
-        if (idx == 0)
+ 
+        switch (idx)
         {
-            Debug.Log("현재 씬 unload");
-            SceneManager.UnloadSceneAsync(currentScene);
-            SceneManager.LoadScene("SampleScene_Mieu");
-
+            case -1:
+                break;
+            case 0:
+                //미유 낚시
+                SceneManager.LoadScene("SampleScene_Mieu");
+                break;
+            case 1:
+                //당근이 같은 그림
+                SceneManager.LoadScene("pic_Methodscene");
+                break;
+            case 2: 
+                //개굴이 파리 잡기
+                SceneManager.LoadScene("fly_GameScene");
+                break;
+            case 3:
+                //바늘이 장보기
+                SceneManager.LoadScene("ShopRuleScene");
+                break;
+            case 4:
+                //몽몽이 같은 댕댕
+                SceneManager.LoadScene("dangdang_gameMethod");
+                break;
+            case 5:
+                //토리 당근 홀짝
+                SceneManager.LoadScene("tori_Game");
+                break;
+            case 6:
+                //부기 순서 맞추기
+                SceneManager.LoadScene("Seq_Level1");
+                break;
         }
-        else if (idx == 2)
-            SceneManager.LoadScene("fly_GameScene");
-        //SceneManager.LoadScene($"GameScene_{idx}");
     }
 
     public void Setting_RuleClick()
