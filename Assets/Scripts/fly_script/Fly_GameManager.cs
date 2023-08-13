@@ -31,6 +31,7 @@ public class Fly_GameManager : MonoBehaviour
 
     void Awake()
     {
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
         currentTime = 0.0f;
         isTimerRunning = false;
     }

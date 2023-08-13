@@ -8,14 +8,11 @@ public class Fly_MainManager : MonoBehaviour
     public bool Hint_Gaegul = false;
     public Fly_MainManager main_manager;
 
-    public float bgm_vol;
-    public float sfx_vol;
-
 
     // Start is called before the first frame update
     private void Awake()
     {
-        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
+        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
     }
 
 }
