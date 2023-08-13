@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class BaneulDialogue
@@ -56,11 +57,16 @@ public class BaneulTalking : MonoBehaviour
 
     void Update()
     {
+        Scene scene = SceneManager.GetActiveScene();
         if (!isDialogue)
         {
             if (Input.GetMouseButtonDown(0) && EventSystem.current.IsPointerOverGameObject())
             {
-                if (count < dialogue.Length)
+                if (scene.name == "BaneulTalk" && count == 3)
+                {
+                    GameObject.Find("button").transform.Find("buttonCanvas").gameObject.SetActive(true);
+                }
+                else if (count < dialogue.Length)
                     NextDialogue();
                 else
                 {
