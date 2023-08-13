@@ -98,14 +98,14 @@ public class Main_UIClick : MonoBehaviour
 
     public void Setting_RetryClick()
     {
+        if (!SceneCheck())
+            return;
 
         Debug.Log("이 게임 Lv1부터 다시 시작하기"+idx);
         Close();
  
         switch (idx)
         {
-            case -1:
-                break;
             case 0:
                 //미유 낚시
                 SceneManager.LoadScene("SampleScene_Mieu");
@@ -138,12 +138,11 @@ public class Main_UIClick : MonoBehaviour
     }
 
     public void Setting_RuleClick()
-    { 
-        if (idx != -1)
-        {
-            RuleImage.SetActive(true);
+    {
+        if (!SceneCheck())
+            return;
+         RuleImage.SetActive(true);
             Debug.Log("게임 방법 보여짐");
-        }
     }
 
     public void SoundBtnClick()
@@ -171,6 +170,14 @@ public class Main_UIClick : MonoBehaviour
             }
         }
 
+    }
+
+    public bool SceneCheck()
+    {
+        if (GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex != -1)
+            return true;
+        else
+            return false;
     }
     
     public void TimePause()
