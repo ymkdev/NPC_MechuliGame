@@ -26,6 +26,7 @@ public class Fly_GameHint : MonoBehaviour
                 isClick = true;
                 Debug.Log("힌트 카드 클릭");
                 HintImage.SetActive(true);
+                Main_MainManager.Instance.ClearStage(3);
             }
             else
             {

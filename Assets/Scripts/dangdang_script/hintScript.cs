@@ -14,6 +14,7 @@ public class hintScript : MonoBehaviour
     {
         hint_have_mongmong.SetActive(false);
         hint_envelope.SetActive(true);
+        Main_MainManager.Instance.ClearStage(5);
         //테스트실패PlayerPrefs.SetInt("UnlockedHome", 2);
     }
 

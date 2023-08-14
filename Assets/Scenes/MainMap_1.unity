@@ -4440,12 +4440,12 @@ MonoBehaviour:
   idx: 0
   HintImageArray:
   - {fileID: 1063457247}
-  - {fileID: 989449956}
-  - {fileID: 802571488}
-  - {fileID: 1236236859}
   - {fileID: 929455907}
-  - {fileID: 307293515}
   - {fileID: 249366614}
+  - {fileID: 802571488}
+  - {fileID: 307293515}
+  - {fileID: 989449956}
+  - {fileID: 1236236859}
 --- !u!4 &2049507984
 Transform:
   m_ObjectHideFlags: 0
