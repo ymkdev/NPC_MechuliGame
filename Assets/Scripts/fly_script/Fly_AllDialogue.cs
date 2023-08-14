@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,26 +9,26 @@ public class Fly_AllDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        Debug.Log("All Dialogue ½ºÅ©¸³Æ® ½ÇÇà");
+        Debug.Log("All Dialogue ìŠ¤í¬ë¦½íŠ¸ ì‹¤í–‰");
 
         scene = SceneManager.GetActiveScene();
         if ((scene.name).Equals("fly_MainScene"))
         {
-            sentences = new string[] { "¿©±ä ¿Ö ÀÌ·¸°Ô ÆÄ¸®°¡ ¸¹¾Æ¡¦.", "(°³±¼ÀÌ°¡ ¶ÙÃÄ³ª¿Â´Ù)", "°³±¼¾Æ ¹«½¼ ÀÏÀÌ¾ß??",
-            "Áı¿¡ ÆÄ¸®°¡ ³Ê¹« ¸¹¾Æ¤Ğ¤Ğ¤Ğ\n³ª Á» µµ¿ÍÁÖ¶ó", "(¸Â´Ù °³±¼ÀÌ´Â ÆÄ¸®¸¦ ¹«¼­¿öÇÏ´Â\nÆ¯ÀÌÇÑ °³±¸¸®¿´Áö..)",
-            "È­¸é ¼Ó ·£´ıÀ¸·Î ³ªÅ¸³ª´Â ÆÄ¸®¸¦\nÁ¦ÇÑ ½Ã°£ ³»¿¡ ¸ñÇ¥ Á¡¼ö¸¸Å­\nÀâÀ¸¸é µÅ!","1¶ó¿îµå´Â 5Á¡, 2¶ó¿îµå´Â 8Á¡,\n" +
-            "3¶ó¿îµå´Â 10Á¡ÀÌ ¸ñÇ¥ Á¡¼ö´Ï\n±â¾ïÇÏÀÚ"};
+            sentences = new string[] { "ì—¬ê¸´ ì™œ ì´ë ‡ê²Œ íŒŒë¦¬ê°€ ë§ì•„â€¦.", "(ê°œêµ´ì´ê°€ ë›°ì³ë‚˜ì˜¨ë‹¤)", "ê°œêµ´ì•„ ë¬´ìŠ¨ ì¼ì´ì•¼??",
+            "ì§‘ì— íŒŒë¦¬ê°€ ë„ˆë¬´ ë§ì•„ã… ã… ã… \në‚˜ ì¢€ ë„ì™€ì£¼ë¼", "(ë§ë‹¤ ê°œêµ´ì´ëŠ” íŒŒë¦¬ë¥¼ ë¬´ì„œì›Œí•˜ëŠ”\níŠ¹ì´í•œ ê°œêµ¬ë¦¬ì˜€ì§€..)",
+            "í™”ë©´ ì† ëœë¤ìœ¼ë¡œ ë‚˜íƒ€ë‚˜ëŠ” íŒŒë¦¬ë¥¼\nì œí•œ ì‹œê°„ ë‚´ì— ëª©í‘œ ì ìˆ˜ë§Œí¼\nì¡ìœ¼ë©´ ë¼!","1ë¼ìš´ë“œëŠ” 5ì , 2ë¼ìš´ë“œëŠ” 8ì ,\n" +
+            "3ë¼ìš´ë“œëŠ” 10ì ì´ ëª©í‘œ ì ìˆ˜ë‹ˆ\nê¸°ì–µí•˜ì"};
         }
         else if ((scene.name).Equals("ClearScene"))
         {
-            sentences = new string[] { "»ì¾Ò´Ù¡¦ Á¤¸» °í¸¶¿ö !!!"};
+            sentences = new string[] { "ì‚´ì•˜ë‹¤â€¦ ì •ë§ ê³ ë§ˆì›Œ !!!"};
         }
         else if ((scene.name.Equals("AfterClearScene")))
         {
-            sentences = new string[] { "ÈùÆ®¸¦ ¾ò¾ú´Ù!", "ÀºÇı ²À °±À»°Ô!!" };
+            sentences = new string[] { "íŒíŠ¸ë¥¼ ì–»ì—ˆë‹¤!", "ì€í˜œ ê¼­ ê°šì„ê²Œ!!" };
         }
 
         Fly_DialogueManager.instance.Ondialogue(sentences);
-        Debug.Log("Àü´Ş¿Ï·á");
+        Debug.Log("ì „ë‹¬ì™„ë£Œ");
     }
 }

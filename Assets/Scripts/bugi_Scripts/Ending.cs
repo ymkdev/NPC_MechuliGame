@@ -34,5 +34,10 @@ public class Ending : MonoBehaviour
             End3.SetActive(true);
             End2.SetActive(false);
         }
+        else if (clickObject.name == "GoToStartBtn")
+        {
+            End3.SetActive(false);
+            SceneManager.LoadScene("StartScene"); // Go to Start 
+        }
     }
 }

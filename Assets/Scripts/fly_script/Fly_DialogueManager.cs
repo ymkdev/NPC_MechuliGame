@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,27 +16,28 @@ public class Fly_DialogueManager : MonoBehaviour
     public string currentSentence;
 
     public float typingSpeed = 0.1f;
-    public bool isTyping;
+    public bool isChoice = false;
     public int index;
     public bool getHint;
     public GameObject character;
     public Text NameText;
     public Sprite[] changeChar;
-
+    public GameObject OKBtn, NoBtn;
     public static Fly_DialogueManager instance;
 
     public Scene scene;
 
     private void Awake()
     {
-        Debug.Log("instance ÃÊ±âÈ­");
+        Debug.Log("instance ì´ˆê¸°í™”");
         instance = this;
-        Debug.Log("instance ÃÊ±âÈ­ ¿Ï·á");
-        Debug.Log("Å¥ ÃÊ±âÈ­");
+        Debug.Log("instance ì´ˆê¸°í™” ì™„ë£Œ");
+        Debug.Log("í ì´ˆê¸°í™”");
         sentences = new Queue<string>();
-        Debug.Log("Å¥ ÃÊ±âÈ­ ¿Ï·á");
+        Debug.Log("í ì´ˆê¸°í™” ì™„ë£Œ");
 
         scene = SceneManager.GetActiveScene();
+
     }
 
     public void Ondialogue(string[] lines)
@@ -44,40 +45,40 @@ public class Fly_DialogueManager : MonoBehaviour
         sentences.Clear();
         foreach (string line in lines)
         {
-            sentences.Enqueue(line); // Å¥¿¡ ´ë»ç ³Ö±â              
+            sentences.Enqueue(line); // íì— ëŒ€ì‚¬ ë„£ê¸°              
         }
-        dialogueGroup.alpha = 1; //´ëÈ­Ã¢ ÄÑÁü
-        dialogueGroup.blocksRaycasts = true; // ¸¶¿ì½º ÀÌº¥Æ® °¨Áö
+        dialogueGroup.alpha = 1; //ëŒ€í™”ì°½ ì¼œì§
+        dialogueGroup.blocksRaycasts = true; // ë§ˆìš°ìŠ¤ ì´ë²¤íŠ¸ ê°ì§€
 
         NextSentence();
     }
 
     public void NextSentence()
     {
-        Debug.Log("´ÙÀ½ ´ë»ç" + sentences.Count);
-        // Å¥ ºô ¶§ ±îÁö ´ë»ç ºÒ·¯¿À±â
+        Debug.Log("ë‹¤ìŒ ëŒ€ì‚¬" + sentences.Count);
+        // í ë¹Œ ë•Œ ê¹Œì§€ ëŒ€ì‚¬ ë¶ˆëŸ¬ì˜¤ê¸°
         if (sentences.Count != 0)
         {
             Debug.Log(sentences.Count);
             currentSentence = sentences.Dequeue();
-            if ((scene.name).Equals("fly_MainScene")) //¸ŞÀÎ¾À Ä³¸¯ÅÍ ÀÌ¹ÌÁö ±³Ã¼
+            if ((scene.name).Equals("fly_MainScene")) //ë©”ì¸ì”¬ ìºë¦­í„° ì´ë¯¸ì§€ êµì²´
             {
                 if (index % 2 == 1 || index > 4)
                 {
-                    Debug.Log(index + "¹Ù²Ù±â");
+                    Debug.Log(index + "ë°”ê¾¸ê¸°");
                     character.GetComponent<SpriteRenderer>().sprite = changeChar[1];
-                    NameText.text = "°³±¼ÀÌ";
+                    NameText.text = "ê°œêµ´ì´";
                 }
                 else
                 {
                     character.GetComponent<SpriteRenderer>().sprite = changeChar[0];
-                    NameText.text = "ÃòÃò";
+                    NameText.text = "ì¸„ì¸„";
                 }
 
             }
-            else if ((scene.name).Equals("ClearScene")) //Å¬¸®¾î¾À ÈùÆ® È¤µæ true
+            else if ((scene.name).Equals("ClearScene")) //í´ë¦¬ì–´ì”¬ íŒíŠ¸ í˜¹ë“ true
             {
-                Debug.Log("Å¬¸®¾î¾À"+index);
+                Debug.Log("í´ë¦¬ì–´ì”¬"+index);
                 if (index == 0)
                     getHint = true;
             }
@@ -86,17 +87,17 @@ public class Fly_DialogueManager : MonoBehaviour
                 if (index == 1)
                 {
                     character.GetComponent<SpriteRenderer>().sprite = changeChar[1];
-                    NameText.text = "°³±¼ÀÌ";
+                    NameText.text = "ê°œêµ´ì´";
                 }
                 else
                 {
                     character.GetComponent<SpriteRenderer>().sprite = changeChar[0];
-                    NameText.text = "ÃòÃò";
+                    NameText.text = "ì¸„ì¸„";
                 }
                
             }
            index++;
-            //ÄÚ·çÆ¾
+            //ì½”ë£¨í‹´
             /*isTyping = true;
             arrow.SetActive(false);
             StartCoroutine(Typing(currentSentence));*/
@@ -115,35 +116,41 @@ public class Fly_DialogueManager : MonoBehaviour
         }
     }
 
-    //Å¸ÀÌÇÎÈ¿°ú ÄÚ·çÆ¾
+    //íƒ€ì´í•‘íš¨ê³¼ ì½”ë£¨í‹´
     /*IEnumerator Typing(string line)
     {
         dialogueText.text = "";
         foreach (char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed); //¼ÓµµÁ¶Àı
+            yield return new WaitForSeconds(typingSpeed); //ì†ë„ì¡°ì ˆ
         }
     }*/
 
 
-    /*private void Update()
+    private void Update()
     {
-        //dialogueText == currentSentence ÀÌ¸é ´ë»ç ÇÑÁÙ ³¡
-        if (dialogueText.text.Equals(currentSentence)) //¸ŞÀÎ¾À¿¡¼­ ´ëÈ­ ³¡³ª¸é È­»ìÇ¥ ³ëÃâ
+        //dialogueText == currentSentence ì´ë©´ ëŒ€ì‚¬ í•œì¤„ ë
+        if (dialogueText.text.Equals("ì§‘ì— íŒŒë¦¬ê°€ ë„ˆë¬´ ë§ì•„ã… ã… ã… \në‚˜ ì¢€ ë„ì™€ì£¼ë¼")) //ë©”ì¸ì”¬ì—ì„œ ëŒ€í™” ëë‚˜ë©´ í™”ì‚´í‘œ ë…¸ì¶œ
         {
-            if(!(scene.name).Equals("ClearScene"))
-                arrow.SetActive(true);
-            isTyping = false;
-            Debug.Log("ÇÑÁÙ ³¡");
+            OKBtn.SetActive(true);
+            NoBtn.SetActive(true);
+            isChoice = true;
         }
-    }*/
+        else
+        {
+            isChoice = false;
+            OKBtn.SetActive(false);
+            NoBtn.SetActive(false);
+        }
 
-    /* public void OnPointerDown(PointerEventData eventData) // ÅÍÄ¡½Ã
+    }
+
+    /* public void OnPointerDown(PointerEventData eventData) // í„°ì¹˜ì‹œ
      {
-         if (!isTyping) //Å¸ÀÌÇÎ È¿°ú Áß¿£ Å¬¸¯ x
+         if (!isTyping) //íƒ€ì´í•‘ íš¨ê³¼ ì¤‘ì—” í´ë¦­ x
          {
-             Debug.Log("´ÙÀ½ ´ë»ç È£Ãâ");
+             Debug.Log("ë‹¤ìŒ ëŒ€ì‚¬ í˜¸ì¶œ");
              NextSentence();
          }
      }*/

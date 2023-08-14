@@ -21,8 +21,8 @@ public class Way : MonoBehaviour
     }
     public void OnClick()
     {
-        WayPop.SetActive(true);
+        WayPop.SetActive(false);
         GameWay.tf = true;
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,16 +6,25 @@ using UnityEngine.EventSystems;
 
 public class Fly_DialogueBoxClick : MonoBehaviour, IPointerDownHandler
 {
-    public void OnPointerDown(PointerEventData eventData) // ÅÍÄ¡½Ã
+    public void OnPointerDown(PointerEventData eventData) // í„°ì¹˜ì‹œ
     {
-        /*if (!Fly_DialogueManager.instance.isTyping) //Å¸ÀÌÇÎ È¿°ú Áß¿£ Å¬¸¯ x
+        /*if (!Fly_DialogueManager.instance.isTyping) //íƒ€ì´í•‘ íš¨ê³¼ ì¤‘ì—” í´ë¦­ x
         {
             if(Fly_DialogueManager.instance.getHint)
 
-            Debug.Log("´ÙÀ½ ´ë»ç È£Ãâ");
+            Debug.Log("ë‹¤ìŒ ëŒ€ì‚¬ í˜¸ì¶œ");
             Fly_DialogueManager.instance.NextSentence();
         }*/
-        Fly_DialogueManager.instance.NextSentence();
+        if (!Fly_DialogueManager.instance.isChoice)
+        {
+            Debug.Log("ë°•ìŠ¤ í´ë¦­");
+            Fly_DialogueManager.instance.NextSentence();
+        }
 
+    }
+
+    public void OKBtnClick()
+    {
+        Fly_DialogueManager.instance.NextSentence();
     }
 }

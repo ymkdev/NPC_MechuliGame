@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/bugi/Seq_Dialog.unity
     guid: 9b11597bec947c24ebe732e64dee6c01
   - enabled: 1
+    path: Assets/Scenes/crimeStart/Criminal.unity
+    guid: c1ba29991ab775c4886e331f57e3aee6
+  - enabled: 1
+    path: Assets/Scenes/crimeStart/startCrime.unity
+    guid: 95421019eed02064b99c2b39b7b1fb58
+  - enabled: 1
     path: Assets/Scenes/pic/pic_Storyscene.unity
     guid: c5967c894146b9247a3e85c6cef35f29
   - enabled: 1
@@ -30,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/dangdang/dangdang_dialogue.unity
     guid: e38102b867b442943a3ca7c0f82fe5ce
   - enabled: 1
-    path: Assets/Scenes/bugi/EndScene.unity
+    path: Assets/Scenes/end/EndScene.unity
     guid: 07d1539bcd9dfc3478a70bf0667afb7d
   - enabled: 1
     path: Assets/Scenes/bugi/Seq_EndDialog.unity
@@ -132,31 +138,31 @@ EditorBuildSettings:
     path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulEndTalk1.unity
     guid: 7bc3c356e7a4996409b7b5ec4e312867
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulEndTalk2.unity
+    path: 
     guid: 340754e63ea60474dbc98c2a0310c187
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk2.unity
+    path: 
     guid: 4c71e4e54d598dd4c9b42aa1f117ab64
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk3.unity
+    path: 
     guid: c96ebc17c6f42f04fb7278ca0c323540
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk4.unity
+    path: 
     guid: d7b58f0bf90228043a95b7c9e0d5dbf9
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk5.unity
+    path: 
     guid: dcffa70341c93e14582b596fd099ee0a
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk6.unity
+    path: 
     guid: 80f8d48c381ab0747bce77f9eccb307f
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk7.unity
+    path: 
     guid: 886d53196afac234781d0f3d52d4399b
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk8.unity
+    path: 
     guid: 131d8ddb28fd17946a737fe867f48689
   - enabled: 0
-    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk9.unity
+    path: 
     guid: 0b70ea824da97ca409bb9446b4be1fd2
   - enabled: 1
     path: Assets/Scenes/fly/HintScene.unity
@@ -194,4 +200,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pic/pic_Methodscene.unity
     guid: c1c4be1103296254cb651fdfd05feeef
+  - enabled: 1
+    path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk2.unity
+    guid: 4908021ccf41fd842bd9d79439a77425
   m_configObjects: {}

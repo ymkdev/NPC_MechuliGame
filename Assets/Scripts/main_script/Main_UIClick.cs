@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,8 +8,10 @@ public class Main_UIClick : MonoBehaviour
     // Start is called before the first frame update
     public GameObject Btn;
     public GameObject [] Box;
+    public Sprite [] RuleImageArray;
     public GameObject RuleImage;
     public int idx;
+    public GameObject[] HintImageArray;
 
     // Start is called before the first frame update
 
@@ -18,29 +20,77 @@ public class Main_UIClick : MonoBehaviour
         foreach (GameObject box in Box)
             box.SetActive(false);
 
+        foreach (GameObject hintObject in HintImageArray)
+        {
+            hintObject.SetActive(false);
+        }
     }
 
     private void Update()
     {
         idx = GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex;
+        if (idx != -1)
+            RuleImage.GetComponent<Image>().sprite = RuleImageArray[idx];
     }
+
     public void HintBtnClick()
     {
+        Debug.Log("ížŒíŠ¸ ë²„íŠ¼ í´ë¦­");
+        Box[0].SetActive(true);
+        Debug.Log(Box[0]);
+
+        int stageClear = Main_MainManager.Instance.stageClear;
+
+        print(stageClear);
         
+        switch (stageClear)
+        {
+            case 1:
+                ShowHint(0);
+                break;
+            case 2:
+                ShowHint(1);
+                break;
+            case 3:
+                ShowHint(2);
+                break;
+            case 4:
+                ShowHint(3);
+                break;
+            case 5:
+                ShowHint(4);
+                break;
+            case 6:
+                ShowHint(5);
+                break;
+            case 7:
+                ShowHint(6);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void ShowHint(int hintIndex)
+    {
+        if (hintIndex >= 0 && hintIndex < HintImageArray.Length)
+        {
+            HintImageArray[hintIndex].SetActive(true);
+        }
     }
 
     public void SettingBtnClick()
     {
         TimePause();
-        Debug.Log("¼³Á¤ ¹öÆ° Å¬¸¯");
+        Debug.Log("ì„¤ì • ë²„íŠ¼ í´ë¦­");
         Box[1].SetActive(true);
         Debug.Log(Box[1]);
     }
 
     public void Setting_ToMainClick()
     {
-        Debug.Log("¸ÞÀÎÀ¸·Î ¹öÆ° Å¬¸¯");
-        //MainMapÀ¸·ÎÀÌµ¿
+        Debug.Log("ë©”ì¸ìœ¼ë¡œ ë²„íŠ¼ í´ë¦­");
+        //MainMapìœ¼ë¡œì´ë™
         Close();
         SceneManager.LoadScene("MainMap_1");
 
@@ -48,46 +98,86 @@ public class Main_UIClick : MonoBehaviour
 
     public void Setting_RetryClick()
     {
+        if (!SceneCheck())
+            return;
 
-        Debug.Log("ÀÌ °ÔÀÓ Lv1ºÎÅÍ ´Ù½Ã ½ÃÀÛÇÏ±â"+idx);
+        Debug.Log("ì´ ê²Œìž„ Lv1ë¶€í„° ë‹¤ì‹œ ì‹œìž‘í•˜ê¸°"+idx);
         Close();
-        string currentScene = SceneManager.GetActiveScene().name;
-        
-        if (idx == 0)
+ 
+        switch (idx)
         {
-            Debug.Log("ÇöÀç ¾À unload");
-            SceneManager.UnloadSceneAsync(currentScene);
-            SceneManager.LoadScene("SampleScene_Mieu");
-
+            case 0:
+                //ë¯¸ìœ  ë‚šì‹œ
+                SceneManager.LoadScene("SampleScene_Mieu");
+                break;
+            case 1:
+                //ë‹¹ê·¼ì´ ê°™ì€ ê·¸ë¦¼
+                SceneManager.LoadScene("pic_Methodscene");
+                break;
+            case 2: 
+                //ê°œêµ´ì´ íŒŒë¦¬ ìž¡ê¸°
+                SceneManager.LoadScene("fly_GameScene");
+                break;
+            case 3:
+                //ë°”ëŠ˜ì´ ìž¥ë³´ê¸°
+                SceneManager.LoadScene("ShopRuleScene");
+                break;
+            case 4:
+                //ëª½ëª½ì´ ê°™ì€ ëŒ•ëŒ•
+                SceneManager.LoadScene("dangdang_gameMethod");
+                break;
+            case 5:
+                //í† ë¦¬ ë‹¹ê·¼ í™€ì§
+                SceneManager.LoadScene("tori_Game");
+                break;
+            case 6:
+                //ë¶€ê¸° ìˆœì„œ ë§žì¶”ê¸°
+                SceneManager.LoadScene("Seq_Level1");
+                break;
         }
-        else if (idx == 2)
-            SceneManager.LoadScene("fly_GameScene");
-        //SceneManager.LoadScene($"GameScene_{idx}");
     }
 
     public void Setting_RuleClick()
     {
-        Debug.Log("°ÔÀÓ ¹æ¹ý º¸¿©Áü");
+        if (!SceneCheck())
+            return;
+         RuleImage.SetActive(true);
+            Debug.Log("ê²Œìž„ ë°©ë²• ë³´ì—¬ì§");
     }
 
     public void SoundBtnClick()
     {
         
-        Debug.Log("¼Ò¸® ¹öÆ° Å¬¸¯");
+        Debug.Log("ì†Œë¦¬ ë²„íŠ¼ í´ë¦­");
         Box[2].SetActive(true);
         Debug.Log(Box[2]);
     }
     public void Close()
     {
-        TimeStart();
-        if (Box[0].activeSelf)
-            Box[0].SetActive(false);
-        else if (RuleImage.activeSelf)
+        if (RuleImage.activeSelf)
+        {
             RuleImage.SetActive(false);
-        else if (Box[1].activeSelf)
-            Box[1].SetActive(false);
-        else if (Box[2].activeSelf)
-            Box[2].SetActive(false);
+            return;
+        }
+
+        for (int i = 0; i < Box.Length; i++)
+        {
+            if (Box[i].activeSelf)
+            {
+                Box[i].SetActive(false);
+                TimeStart();
+                break;
+            }
+        }
+
+    }
+
+    public bool SceneCheck()
+    {
+        if (GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex != -1)
+            return true;
+        else
+            return false;
     }
     
     public void TimePause()

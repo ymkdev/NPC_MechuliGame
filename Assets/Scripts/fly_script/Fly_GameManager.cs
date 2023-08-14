@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,6 +31,7 @@ public class Fly_GameManager : MonoBehaviour
 
     void Awake()
     {
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
         currentTime = 0.0f;
         isTimerRunning = false;
     }
@@ -40,8 +41,8 @@ public class Fly_GameManager : MonoBehaviour
         isTimerRunning = true;
 
         Next.SetActive(false);
-        countdownText.text = "³²Àº ½Ã°£ : " + Mathf.Round(setTime).ToString() + "ÃÊ";
-        scoreText.text = "Á¡¼ö : " + score.ToString();
+        countdownText.text = "ë‚¨ì€ ì‹œê°„ : " + Mathf.Round(setTime).ToString() + "ì´ˆ";
+        scoreText.text = "ì ìˆ˜ : " + score.ToString();
         level.GetComponent<Image>().sprite = Levels[stageIndex];
 
         Next.SetActive(false);
@@ -55,16 +56,12 @@ public class Fly_GameManager : MonoBehaviour
     {
        if (isTimerRunning)
         {
-            Debug.Log("°ÔÀÓ °æ°ú ½Ã°£ :"+Time.time);
-            Debug.Log("current Time: "+currentTime);
+           // Debug.Log("ê²Œì„ ê²½ê³¼ ì‹œê°„ :"+Time.time);
+           // Debug.Log("current Time: "+currentTime);
             currentTime += Time.deltaTime;
             if (currentTime >= startTime)
             {
-                Rule.SetActive(false);
-                Canvas.SetActive(true);
-                Stages[0].SetActive(true);
-                // Å¸ÀÌ¸Ó Á¾·á
-                isTimerRunning = false;
+                GameStart();
             }
         }
 
@@ -75,8 +72,8 @@ public class Fly_GameManager : MonoBehaviour
             SceneManager.LoadScene("FailScene");
             stageIndex = 0;
         }
-        countdownText.text = "³²Àº ½Ã°£ : " + Mathf.Round(setTime).ToString() + "ÃÊ";
-        scoreText.text = "Á¡¼ö : " + score.ToString();
+        countdownText.text = "ë‚¨ì€ ì‹œê°„ : " + Mathf.Round(setTime).ToString() + "ì´ˆ";
+        scoreText.text = "ì ìˆ˜ : " + score.ToString();
         level.GetComponent<Image>().sprite = Levels[stageIndex];
 
         if (flag)
@@ -100,7 +97,7 @@ public class Fly_GameManager : MonoBehaviour
 
     public void NextStage()
     {
-        Debug.Log("NextStageÇÔ¼ö ½ÇÇà");
+        Debug.Log("NextStageí•¨ìˆ˜ ì‹¤í–‰");
         Next.SetActive(false);
         Success.SetActive(false);
         flag = true;
@@ -120,13 +117,22 @@ public class Fly_GameManager : MonoBehaviour
                 setTime = 10.0f;
 
             //stageText.text = "Level" + (stageIndex + 1).ToString();
-            Debug.Log("ÇöÀç ½ºÅ×ÀÌÁö : " + (stageIndex + 1));
+            Debug.Log("í˜„ì¬ ìŠ¤í…Œì´ì§€ : " + (stageIndex + 1));
         }
         else //Game Clear1
         {
-            Debug.Log("°ÔÀÓ Å¬¸®¾î");
+            Debug.Log("ê²Œì„ í´ë¦¬ì–´");
             SceneManager.LoadScene("ClearScene");
         }
 
+    }
+    public void GameStart()
+    {
+        Debug.Log("ì‹œì‘");
+        Rule.SetActive(false);
+        Canvas.SetActive(true);
+        Stages[0].SetActive(true);
+        // íƒ€ì´ë¨¸ ì¢…ë£Œ
+        isTimerRunning = false;
     }
 }

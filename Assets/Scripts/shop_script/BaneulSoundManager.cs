@@ -9,13 +9,16 @@ public class BaneulSoundManager : MonoBehaviour
 
     public void Awake()
     {
-        var soundManagers = FindObjectsOfType<BaneulSoundManager>();
+        var baneulsoundManagers = FindObjectsOfType<BaneulSoundManager>();
         
-        if (soundManagers.Length == 1)
+        if (baneulsoundManagers.Length == 1)
             DontDestroyOnLoad(gameObject);
         else
             Destroy(gameObject);
-      
+
+        // 인덱스 설정
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 3;
+
     }
     void Start()
     {
@@ -23,9 +26,19 @@ public class BaneulSoundManager : MonoBehaviour
     }
     void Update()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
+        Scene scene = SceneManager.GetActiveScene();
         // 신이름이 MainMap_1이면 사운드 오브젝트 파괴
-        if (currentSceneName == "MainMap_1")
+        /* if (currentSceneName != "BaneulTalk" 
+             && currentSceneName != "BaneulEndTalk1" 
+             && currentSceneName != "ShopGameScene" 
+             && currentSceneName != "ShoppingGetHint"
+              && currentSceneName != "ShoppingHintScene"
+               && currentSceneName != "ShopRuleScene")
+             Destroy(gameObject); */
+        if (scene.name == "MainMap_1")
+        {
+            Debug.Log("파괴되어야함");
             Destroy(gameObject);
+        }
     }
 }

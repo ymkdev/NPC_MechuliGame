@@ -10,6 +10,7 @@ public class HintScript_Miu : MonoBehaviour
     public GameObject letterUnopen;
     public GameObject HintOpen;
     public GameObject StoryThanks;
+    public CrimeMain cm;
 
     public GameObject TalkC1;
     public GameObject nameC;
@@ -23,6 +24,11 @@ public class HintScript_Miu : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+        //cm.MgameIndex = 1;
+        //GameObject.Find("CrimeMain").GetComponent<CrimeMain>().MgameIndex = 1;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -65,6 +71,7 @@ public class HintScript_Miu : MonoBehaviour
                 }
                 if (click_obj.name == "TalkM")
                 {
+                    cm.MgameIndex = 1;
                     SceneManager.LoadScene("MainMap_1");
                 }
             }
@@ -74,6 +81,7 @@ public class HintScript_Miu : MonoBehaviour
     public void letterClick()
     {
         letterUnopen.SetActive(true); //��ư Ŭ������ ���� ����
+        Main_MainManager.Instance.ClearStage(1); // stageClear 값을 1로 변경
     }
  
 }
