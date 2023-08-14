@@ -4374,6 +4374,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio_clips:
   - {fileID: 8300000, guid: 5b2404304034539439bc831903be5ce7, type: 3}
+  - {fileID: 8300000, guid: 5b2404304034539439bc831903be5ce7, type: 3}
+  - {fileID: 8300000, guid: 073e263a58e5d164b9ae28dc11a49b7d, type: 3}
+  - {fileID: 8300000, guid: 6b96cfa0c6629fe47b5de17c4ce90d6d, type: 3}
   sfx_slider: {fileID: 1040513378}
 --- !u!4 &2018229011
 Transform:

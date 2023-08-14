@@ -22,11 +22,15 @@ public class Ending : MonoBehaviour
         {
             End_Success.SetActive(true);
             End_Fail.SetActive(false);
+            if (!(End1.activeSelf) && !(End2.activeSelf) && !(End3.activeSelf))
+                GameObject.Find("SoundManager").GetComponent<Main_SoundManager>().PlaySound("Success");
         }
         else if (CriminalClick.rslt == false)
         {
             End_Success.SetActive(false);
             End_Fail.SetActive(true);
+            if (!(End1.activeSelf) && !(End2.activeSelf) && !(End3.activeSelf))
+                GameObject.Find("SoundManager").GetComponent<Main_SoundManager>().PlaySound("Fail");
         }
     }
 

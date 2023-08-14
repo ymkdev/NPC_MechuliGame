@@ -24,9 +24,7 @@ public class Main_SoundManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
-        {
             PlaySound("Click");
-        }
     }
     public void PlaySound(string type)
     {
