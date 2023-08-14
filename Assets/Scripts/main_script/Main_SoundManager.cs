@@ -25,7 +25,6 @@ public class Main_SoundManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("클릭 효과음 재생");
             PlaySound("Click");
         }
     }

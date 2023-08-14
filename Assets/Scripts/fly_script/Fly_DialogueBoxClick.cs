@@ -15,7 +15,16 @@ public class Fly_DialogueBoxClick : MonoBehaviour, IPointerDownHandler
             Debug.Log("다음 대사 호출");
             Fly_DialogueManager.instance.NextSentence();
         }*/
-        Fly_DialogueManager.instance.NextSentence();
+        if (!Fly_DialogueManager.instance.isChoice)
+        {
+            Debug.Log("박스 클릭");
+            Fly_DialogueManager.instance.NextSentence();
+        }
 
+    }
+
+    public void OKBtnClick()
+    {
+        Fly_DialogueManager.instance.NextSentence();
     }
 }

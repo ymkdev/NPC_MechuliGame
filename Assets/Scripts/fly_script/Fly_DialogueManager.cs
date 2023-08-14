@@ -16,13 +16,13 @@ public class Fly_DialogueManager : MonoBehaviour
     public string currentSentence;
 
     public float typingSpeed = 0.1f;
-    public bool isTyping;
+    public bool isChoice = false;
     public int index;
     public bool getHint;
     public GameObject character;
     public Text NameText;
     public Sprite[] changeChar;
-
+    public GameObject OKBtn, NoBtn;
     public static Fly_DialogueManager instance;
 
     public Scene scene;
@@ -37,6 +37,7 @@ public class Fly_DialogueManager : MonoBehaviour
         Debug.Log("큐 초기화 완료");
 
         scene = SceneManager.GetActiveScene();
+
     }
 
     public void Ondialogue(string[] lines)
@@ -127,17 +128,23 @@ public class Fly_DialogueManager : MonoBehaviour
     }*/
 
 
-    /*private void Update()
+    private void Update()
     {
         //dialogueText == currentSentence 이면 대사 한줄 끝
-        if (dialogueText.text.Equals(currentSentence)) //메인씬에서 대화 끝나면 화살표 노출
+        if (dialogueText.text.Equals("집에 파리가 너무 많아ㅠㅠㅠ\n나 좀 도와주라")) //메인씬에서 대화 끝나면 화살표 노출
         {
-            if(!(scene.name).Equals("ClearScene"))
-                arrow.SetActive(true);
-            isTyping = false;
-            Debug.Log("한줄 끝");
+            OKBtn.SetActive(true);
+            NoBtn.SetActive(true);
+            isChoice = true;
         }
-    }*/
+        else
+        {
+            isChoice = false;
+            OKBtn.SetActive(false);
+            NoBtn.SetActive(false);
+        }
+
+    }
 
     /* public void OnPointerDown(PointerEventData eventData) // 터치시
      {

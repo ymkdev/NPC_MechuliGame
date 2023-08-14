@@ -56,16 +56,12 @@ public class Fly_GameManager : MonoBehaviour
     {
        if (isTimerRunning)
         {
-            Debug.Log("게임 경과 시간 :"+Time.time);
-            Debug.Log("current Time: "+currentTime);
+           // Debug.Log("게임 경과 시간 :"+Time.time);
+           // Debug.Log("current Time: "+currentTime);
             currentTime += Time.deltaTime;
             if (currentTime >= startTime)
             {
-                Rule.SetActive(false);
-                Canvas.SetActive(true);
-                Stages[0].SetActive(true);
-                // 타이머 종료
-                isTimerRunning = false;
+                GameStart();
             }
         }
 
@@ -129,5 +125,14 @@ public class Fly_GameManager : MonoBehaviour
             SceneManager.LoadScene("ClearScene");
         }
 
+    }
+    public void GameStart()
+    {
+        Debug.Log("시작");
+        Rule.SetActive(false);
+        Canvas.SetActive(true);
+        Stages[0].SetActive(true);
+        // 타이머 종료
+        isTimerRunning = false;
     }
 }
