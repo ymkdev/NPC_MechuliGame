@@ -44,6 +44,9 @@ public class CriminalClick : MonoBehaviour
     public GameObject[] criminalC;
     public GameObject[] criminalS;
 
+    // add) end scene bool
+    public static bool rslt;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -197,6 +200,8 @@ public class CriminalClick : MonoBehaviour
                     sTalk2.SetActive(false);
                     sTalk3.SetActive(true);
                     sadTalk3.text = "범인이 아니야";
+                    rslt = false;
+                    SceneManager.LoadScene("EndScene");
                 }
 
                 if (click_obj.name == "TalkH") //���� ��ȭâ
@@ -211,6 +216,8 @@ public class CriminalClick : MonoBehaviour
                     hTalk2.SetActive(false);
                     hTalk3.SetActive(true);
                     happyTalk3.text = "범인이 맞아!!";
+                    rslt = true;
+                    SceneManager.LoadScene("EndScene");
                 }
             }
         }
