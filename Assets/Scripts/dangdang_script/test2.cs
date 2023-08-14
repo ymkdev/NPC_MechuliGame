@@ -74,11 +74,11 @@ public class test2 : MonoBehaviour
                 {
                     if (count_dia < dialogue.Length)
                         NextDialogue();
-                    //else
-                    //{
-                    //    OnOff(false);
-
-                    //}
+                    else
+                    {
+                        //OnOff(false);
+                        SceneManager.LoadScene("MainMap_1");
+                    }
                 }
             }
         }

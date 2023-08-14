@@ -55,6 +55,8 @@ public class test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //추가 요청 코드 
+        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 4;
         OnOff(true);
 
         count_dia = 0;
