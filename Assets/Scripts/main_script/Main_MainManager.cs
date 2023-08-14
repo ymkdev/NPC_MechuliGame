@@ -7,7 +7,6 @@ public class Main_MainManager : MonoBehaviour
 {
     public int gameIndex = -1;
     public GameObject[] DontDestroy_Objects;
-    private HashSet<GameObject> dontDestroySet = new HashSet<GameObject>();
     private static Main_MainManager instance;
     public int stageClear = 0;
 
@@ -33,21 +32,26 @@ public class Main_MainManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyObjects();
+        }
+
+    }
+    private void DontDestroyObjects()
+    {
         foreach (GameObject obj in DontDestroy_Objects)
         {
-            if (!dontDestroySet.Contains(obj))
-            {
-                DontDestroyOnLoad(obj);
-                dontDestroySet.Add(obj);
-                Debug.Log(obj.name+"added");
-            }
-            else
-            {
-                Debug.Log("이미 존재함");
-            }
-
+            DontDestroyOnLoad(obj);
+            Debug.Log(obj.name + " added");
         }
     }
+
 
     // Update is called once per frame
     void Update()
