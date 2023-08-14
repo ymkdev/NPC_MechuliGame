@@ -23,11 +23,11 @@ public class Fly_ObjectSpawner : MonoBehaviour
 
         if (isFirst)
         {
-            n = Random.Range(2, 4);
+            n = Random.Range(3, 8);
             isFirst = false;
         }
         else
-            n = Random.Range(1, 2);
+            n = Random.Range(3, 8);
 
         //Quaternion rotation = Quaternion.Euler(0, 0, 45);
 

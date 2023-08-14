@@ -310,7 +310,7 @@ MonoBehaviour:
   minY: -5.37
   maxY: 5.37
   startTime: 2
-  moveSpeed: 10
+  moveSpeed: 15
   changeSprite:
   - {fileID: 21300000, guid: eaad6fbcce58286498038e35c5c61ad4, type: 3}
   isCatch: 0
@@ -901,7 +901,7 @@ MonoBehaviour:
   Success: {fileID: 151485516}
   Rule: {fileID: 2023607419}
   Canvas: {fileID: 1085517968}
-  setTime: 10
+  setTime: 40
   countdownText: {fileID: 1996482524}
   scoreText: {fileID: 931487776}
   level: {fileID: 1533234812}
