@@ -9,6 +9,9 @@ public class DialogManager : MonoBehaviour
 {
     public GameObject chuchu;
     public GameObject boogie;
+    public GameObject startBtn;
+    public GameObject YBtn;
+    public GameObject NBtn;
     public Text txtName;
     public Text txtSentence;
     public static int cnt = 0; 
@@ -18,6 +21,8 @@ public class DialogManager : MonoBehaviour
 
     public void Begin(Dialog info)
     {
+        Debug.Log(startBtn.activeSelf);
+        startBtn.SetActive(false);
         //cnt = 0;
         //DialogTrigger.Trigger();
         sentences.Clear();
@@ -36,13 +41,20 @@ public class DialogManager : MonoBehaviour
         Next();
     }
 
-    public void Next()
+    public void Next() // 
     {
         Debug.Log(cnt);
         cnt = cnt + 1;
 
-        if (cnt == 3 || cnt == 8)
+        /*if(cnt == 1) // 그래 아니 버튼 구현 미완성으로 주석 처리
         {
+            YBtn.SetActive(true);
+            NBtn.SetActive(true);
+        }*/
+        if (cnt == 2)
+        {
+            YBtn.SetActive(false);
+            NBtn.SetActive(false);
             chuchu.SetActive(true);
             boogie.SetActive(false);
         }
@@ -52,7 +64,7 @@ public class DialogManager : MonoBehaviour
             chuchu.SetActive(false);
         }  
         
-      if(sentences.Count == 0 && names.Count == 0 && cnt == 7)
+      if(sentences.Count == 0 && names.Count == 0 && cnt == 6)
         {
             //End();
 
@@ -60,7 +72,7 @@ public class DialogManager : MonoBehaviour
             SceneManager.LoadScene("Seq_Level1");
             return;
         }
-        if (sentences.Count == 0 && names.Count == 0 && cnt >=8)
+        if (sentences.Count == 0 && names.Count == 0 && cnt >=7)
         {
             //End();
 
