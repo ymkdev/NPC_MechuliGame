@@ -12,7 +12,7 @@ public class Fly_MainManager : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
     }
 
 }
