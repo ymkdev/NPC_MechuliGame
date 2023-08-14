@@ -14,8 +14,8 @@ public class ShopOpenHint : MonoBehaviour
 
             GameObject.Find("Canvas/envelope").SetActive(false); 
             // hint 종이 활성화
-            GameObject.Find("Canvas").transform.Find("hint").gameObject.SetActive(true); 
-        
+            GameObject.Find("Canvas").transform.Find("hint").gameObject.SetActive(true);
+            Main_MainManager.Instance.ClearStage(4);
         }
     }
 }

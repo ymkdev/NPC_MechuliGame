@@ -35,6 +35,7 @@ public class Main_UIClick : MonoBehaviour
 
     public void HintBtnClick()
     {
+        TimePause();
         Debug.Log("힌트 버튼 클릭");
         Box[0].SetActive(true);
         Debug.Log(Box[0]);
@@ -73,9 +74,9 @@ public class Main_UIClick : MonoBehaviour
 
     private void ShowHint(int hintIndex)
     {
-        if (hintIndex >= 0 && hintIndex < HintImageArray.Length)
+        for (int i = 0; i <= hintIndex; i++)
         {
-            HintImageArray[hintIndex].SetActive(true);
+            HintImageArray[i].SetActive(true);
         }
     }
 

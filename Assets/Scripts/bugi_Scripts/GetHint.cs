@@ -36,6 +36,7 @@ public class GetHint : MonoBehaviour
         if (clickObject.name == "Seq_EnvelopeBtn")
         {
             hintpaper.SetActive(true);
+            Main_MainManager.Instance.ClearStage(7);
         }
 
         if (clickObject.name == "Seq_YesBtn")

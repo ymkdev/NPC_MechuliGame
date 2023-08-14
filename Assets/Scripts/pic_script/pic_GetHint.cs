@@ -13,6 +13,7 @@ public class pic_GetHint : MonoBehaviour
     {
         HintEnv.gameObject.SetActive(false);
         Hint.gameObject.SetActive(true);
+        Main_MainManager.Instance.ClearStage(2);
     }
 
     public void ShowHintEnv()
