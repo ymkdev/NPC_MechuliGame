@@ -55,8 +55,8 @@ public class test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //추가 요청 코드 
-        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 4;
+        //추�? ?�청 코드 
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 4;
         OnOff(true);
 
         count_dia = 0;
@@ -87,7 +87,7 @@ public class test : MonoBehaviour
                 Vector3 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Collider2D hitCollider = Physics2D.OverlapPoint(clickPosition);
 
-                // 특정 Collider2D를 클릭한 경우에만 다음 대화로 넘어갑니다.
+                // ?�정 Collider2D�??�릭??경우?�만 ?�음 ?�?�로 ?�어갑니??
                 if (hitCollider != null)
                 {
                     if (count_dia < dialogue.Length)
