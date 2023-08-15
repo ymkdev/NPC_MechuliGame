@@ -16,7 +16,7 @@ public class Fly_Movement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isCatch)
+        if (!isCatch && Time.timeScale != 0)
         {
             Debug.Log("클릭함");
             //SoundManager.instance.PlaySound("CatchFiles_Catch");
