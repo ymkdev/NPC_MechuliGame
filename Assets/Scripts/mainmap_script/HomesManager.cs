@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class HomesManager : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class HomesManager : MonoBehaviour
             Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(clickPosition, Vector2.zero);
 
-            if (hit.collider != null)
+            if (hit.collider != null && EventSystem.current.IsPointerOverGameObject() == false)
             {
                 // 클릭된 Sprite에 대한 처리를 여기에 작성합니다.
                 Homes home3 = homeDB.GetHomes(selectedOption_home);

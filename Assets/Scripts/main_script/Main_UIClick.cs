@@ -12,6 +12,8 @@ public class Main_UIClick : MonoBehaviour
     public GameObject RuleImage;
     public int idx;
     public GameObject[] HintImageArray;
+    public string[] names = { "SampleScene_Mieu", "pic_Gamescene", "fly_GameScene", "ShopGameScene",
+    "dangdang_MainScene", "dangdang_MainScene 1", "dangdang_MainScene 2", "tori_Game", "Seq_Level1", "Seq_Level2"};
 
     // Start is called before the first frame update
 
@@ -99,7 +101,7 @@ public class Main_UIClick : MonoBehaviour
 
     public void Setting_RetryClick()
     {
-        if (!SceneCheck())
+        if (!SceneCheck() || !isGameScene())
             return;
 
         Debug.Log("이 게임 Lv1부터 다시 시작하기"+idx);
@@ -140,10 +142,10 @@ public class Main_UIClick : MonoBehaviour
 
     public void Setting_RuleClick()
     {
-        if (!SceneCheck())
+        if (!SceneCheck() || !isGameScene())
             return;
-         RuleImage.SetActive(true);
-            Debug.Log("게임 방법 보여짐");
+        RuleImage.SetActive(true);
+        Debug.Log("게임 방법 보여짐");
     }
 
     public void SoundBtnClick()
@@ -181,6 +183,16 @@ public class Main_UIClick : MonoBehaviour
             return false;
     }
     
+    public bool isGameScene()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        foreach (string name in names)
+        {
+            if (sceneName.Equals(name))
+                return true;
+        }
+        return false;
+    }
     public void TimePause()
     {
         Time.timeScale = 0;
