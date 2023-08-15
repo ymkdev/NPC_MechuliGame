@@ -1289,7 +1289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: -1}
+  m_AnchoredPosition: {x: 23, y: -1}
   m_SizeDelta: {x: -201.101, y: 149.3894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376654125
@@ -1313,11 +1313,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4e4c6094d62311c4c8639e3b84614797, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1428,6 +1428,8 @@ MonoBehaviour:
   chuchu: {fileID: 0}
   boogie: {fileID: 0}
   startBtn: {fileID: 0}
+  YBtn: {fileID: 0}
+  NBtn: {fileID: 0}
   txtName: {fileID: 1308572045}
   txtSentence: {fileID: 1374725714}
 --- !u!1 &1462462983
@@ -1465,7 +1467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71.4, y: 55.1}
+  m_AnchoredPosition: {x: -71.4, y: 62}
   m_SizeDelta: {x: 532, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462462985
@@ -1489,11 +1491,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 6985fc3d4bd52d14d92df401f83839cc, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1850,7 +1852,7 @@ RectTransform:
   m_GameObject: {fileID: 1740498507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.4, z: 1}
+  m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1376654124}
@@ -2159,6 +2161,8 @@ MonoBehaviour:
   chuchu: {fileID: 1925459004}
   boogie: {fileID: 553078651}
   startBtn: {fileID: 309625504}
+  YBtn: {fileID: 0}
+  NBtn: {fileID: 0}
   txtName: {fileID: 1462462985}
   txtSentence: {fileID: 1376654125}
 --- !u!4 &1870988530

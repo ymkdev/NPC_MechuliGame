@@ -10,7 +10,8 @@ public class Ending : MonoBehaviour
     public GameObject End_Success;
     public GameObject End_Fail;
     public GameObject End1;
-    public GameObject End2;
+    public GameObject End2_1;
+    public GameObject End2_2;
     public GameObject End3;
     /*public GameObject RetryBtn;
     public GameObject EndBtn;
@@ -26,7 +27,7 @@ public class Ending : MonoBehaviour
             sceneCount = sceneCount + 1;
             End_Success.SetActive(true);
             End_Fail.SetActive(false);
-            if (!(End1.activeSelf) && !(End2.activeSelf) && !(End3.activeSelf))
+            if (!(End1.activeSelf) && !(End2_1.activeSelf) && !(End2_2.activeSelf) && !(End3.activeSelf))
                 GameObject.Find("SoundManager").GetComponent<Main_SoundManager>().PlaySound("Success");
         }
         else //if (CriminalClick.rslt == false)
@@ -34,23 +35,16 @@ public class Ending : MonoBehaviour
             sceneCount = sceneCount + 1;
             End_Success.SetActive(false);
             End_Fail.SetActive(true);
-            if (!(End1.activeSelf) && !(End2.activeSelf) && !(End3.activeSelf))
+            if (!(End1.activeSelf) && !(End2_1.activeSelf) && !(End2_2.activeSelf) && !(End3.activeSelf))
                 GameObject.Find("SoundManager").GetComponent<Main_SoundManager>().PlaySound("Fail");
         }
-
-
-        /*  if(sceneCount != 0)
-          {
-              End_Success.SetActive(false);
-              End_Fail.SetActive(false);
-          }*/
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(sceneCount);
+        //Debug.Log(sceneCount);
         if (sceneCount > 1)
         {
             End_Success.SetActive(false);
@@ -89,15 +83,20 @@ public class Ending : MonoBehaviour
         }
 
         // ending scene
-        if (clickObject.name == "nextto2")
+        if (clickObject.name == "nextto2_1")
         {
-            End2.SetActive(true);
+            End2_1.SetActive(true);
             End1.SetActive(false);
+        }
+        else if (clickObject.name == "nextto2_2")
+        {
+            End2_2.SetActive(true);
+            End2_1.SetActive(false);
         }
         else if (clickObject.name == "nextto3")
         {
             End3.SetActive(true);
-            End2.SetActive(false);
+            End2_2.SetActive(false);
         }
         else if (clickObject.name == "GoToStartBtn")
         {

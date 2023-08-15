@@ -885,8 +885,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 618124271}
-        m_TargetAssemblyTypeName: Choose, Assembly-CSharp
-        m_MethodName: OnClickButton
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: ClickNoBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -943,9 +943,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 618124266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81fb9e7ef36ea5248ae2c2db7ec65a15, type: 3}
+  m_Script: {fileID: 11500000, guid: e67dfae511fa775468bfe2de11c3d28b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chuchu: {fileID: 1668947069}
+  boogie: {fileID: 519878092}
+  startBtn: {fileID: 309625504}
+  YBtn: {fileID: 1582893030}
+  NBtn: {fileID: 618124266}
+  txtName: {fileID: 1462462985}
+  txtSentence: {fileID: 1376654125}
 --- !u!1 &881696232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,11 +1732,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4e4c6094d62311c4c8639e3b84614797, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1950,11 +1957,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 6985fc3d4bd52d14d92df401f83839cc, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2156,6 +2163,7 @@ GameObject:
   - component: {fileID: 1582893034}
   - component: {fileID: 1582893033}
   - component: {fileID: 1582893032}
+  - component: {fileID: 1582893035}
   m_Layer: 5
   m_Name: YBtn
   m_TagString: Untagged
@@ -2226,7 +2234,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1582893033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1582893035}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: ClickYesBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1582893033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2265,6 +2285,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582893030}
   m_CullTransparentMesh: 1
+--- !u!114 &1582893035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582893030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67dfae511fa775468bfe2de11c3d28b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chuchu: {fileID: 1668947069}
+  boogie: {fileID: 519878092}
+  startBtn: {fileID: 309625504}
+  YBtn: {fileID: 1582893030}
+  NBtn: {fileID: 618124266}
+  txtName: {fileID: 1462462985}
+  txtSentence: {fileID: 1376654125}
 --- !u!1 &1631355802
 GameObject:
   m_ObjectHideFlags: 0
