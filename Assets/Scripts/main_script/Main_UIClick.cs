@@ -193,6 +193,7 @@ public class Main_UIClick : MonoBehaviour
         }
         return false;
     }
+
     public void TimePause()
     {
         Time.timeScale = 0;

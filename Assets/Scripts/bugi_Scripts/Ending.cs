@@ -72,6 +72,7 @@ public class Ending : MonoBehaviour
         // crime fail
         if (clickObject.name == "End_RetryBtn") // retry
         {
+            GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().DestroyObj();
             SceneManager.LoadScene("StartScene"); // Go to Start
         }
         
@@ -101,7 +102,8 @@ public class Ending : MonoBehaviour
         else if (clickObject.name == "GoToStartBtn")
         {
             End3.SetActive(false);
-            SceneManager.LoadScene("StartScene"); // Go to Start 
+            GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().DestroyObj();
+            SceneManager.LoadScene("StartScene"); // Go to Start
         }
     }
 }
