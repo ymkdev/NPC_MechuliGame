@@ -204,6 +204,4 @@ EditorBuildSettings:
     path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk2.unity
     guid: 4908021ccf41fd842bd9d79439a77425
   - enabled: 1
-    path: Assets/Scenes/bugi/Seq_Dialog_Yes.unity
-    guid: 8bf2b9959106ecb4d9593770af76877a
   m_configObjects: {}
