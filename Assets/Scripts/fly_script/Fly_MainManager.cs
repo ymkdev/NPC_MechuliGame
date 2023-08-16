@@ -13,6 +13,7 @@ public class Fly_MainManager : MonoBehaviour
     private void Awake()
     {
         GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 2;
+        Main_SoundManager.instance.PlayBGMForMiniGame(3);
     }
 
 }

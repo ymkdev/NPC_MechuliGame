@@ -29,6 +29,11 @@ public class BaneulTalking : MonoBehaviour
 
     [SerializeField] private BaneulDialogue[] dialogue;
 
+    private void Awake()
+    {
+        Main_SoundManager.instance.PlayBGMForMiniGame(4);
+    }
+
     public void ShowDialogue()
     {
         OnOff(true);
