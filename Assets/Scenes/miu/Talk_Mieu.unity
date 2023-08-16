@@ -4443,6 +4443,17 @@ MonoBehaviour:
   - {fileID: 196588643}
   - {fileID: 592353403}
   - {fileID: 1362245016}
+  names:
+  - SampleScene_Mieu
+  - pic_Gamescene
+  - fly_GameScene
+  - ShopGameScene
+  - dangdang_MainScene
+  - dangdang_MainScene 1
+  - dangdang_MainScene 2
+  - tori_Game
+  - Seq_Level1
+  - Seq_Level2
 --- !u!4 &703929960
 Transform:
   m_ObjectHideFlags: 0
@@ -9574,6 +9585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio_clips:
   - {fileID: 8300000, guid: 5b2404304034539439bc831903be5ce7, type: 3}
+  bgm_clips: []
   soundX: {fileID: 0}
   sfx_slider: {fileID: 1680315312}
 --- !u!1 &1597240748
@@ -10388,7 +10400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1703134170
 AudioSource:
   m_ObjectHideFlags: 0

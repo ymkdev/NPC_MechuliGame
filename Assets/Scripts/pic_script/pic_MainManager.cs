@@ -10,5 +10,6 @@ public class pic_MainManager : MonoBehaviour
     private void Awake()
     {
         GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 1;
+        Main_SoundManager.instance.PlayBGMForMiniGame(2);
     }
 }

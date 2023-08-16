@@ -8,6 +8,7 @@ public class Mainmap_setIndex : MonoBehaviour
     void Start()
     {
         GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = -1;
+        Main_SoundManager.instance.PlayBGMForMiniGame(0);
     }
 
 }
