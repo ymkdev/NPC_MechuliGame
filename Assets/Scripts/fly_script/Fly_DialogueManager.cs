@@ -112,7 +112,10 @@ public class Fly_DialogueManager : MonoBehaviour
             else if ((scene.name).Equals("ClearScene"))
                 SceneManager.LoadScene("TestScene");
             else
+            {
+                PlayerPrefs.SetInt("UnlockedHomesss", 3);
                 SceneManager.LoadScene("MainMap_1"); //ToMainMap_1
+            }
         }
     }
 

@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   home:
   - homeSprite: {fileID: 21300000, guid: d16ab5c97f1170b499af622c319e0feb, type: 3}
-    homeFlag: 1
+    homeFlag: 0
   - homeSprite: {fileID: 21300000, guid: 419c15e3e715b7c42a3a3246c33f692c, type: 3}
-    homeFlag: 1
+    homeFlag: 0
   - homeSprite: {fileID: 21300000, guid: 34eb31883fd997b4db1c91c1bdfdbf88, type: 3}
-    homeFlag: 1
+    homeFlag: 0
   - homeSprite: {fileID: 21300000, guid: a897b86db39e763478f34258a145d7a6, type: 3}
-    homeFlag: 1
+    homeFlag: 0
   - homeSprite: {fileID: 21300000, guid: 67a8bed73bce5104ab91d5882c821fed, type: 3}
-    homeFlag: 1
+    homeFlag: 0
   - homeSprite: {fileID: 21300000, guid: f76ea8bd2b9cd51499eeda9f7f865125, type: 3}
-    homeFlag: 1
+    homeFlag: 0
   - homeSprite: {fileID: 21300000, guid: edd313731535e254c9827f3cd5cdb630, type: 3}
-    homeFlag: 1
+    homeFlag: 0

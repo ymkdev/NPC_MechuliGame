@@ -18,14 +18,54 @@ public class HomesManager : MonoBehaviour
     public void Awake()
     {
 
-        int unlockedHome = PlayerPrefs.GetInt("UnlockedHome", 1);
-        for (int i = 0; i < unlockedHome; i++)
+        //PlayerPrefs.SetInt("UnlockedHomesss", 0);
+        for (int i = 0; i < 7; i++)
+        {
+            //내 코드 homeDB.home[i].homeFlag = 1;
+            Homes home31 = homeDB.GetHomes(i);
+            home31.homeFlag = 0;
+            Debug.Log("했다.");
+
+        }
+        //int unlockedHome = PlayerPrefs.GetInt("UnlockedHomes", 0);
+        if (!PlayerPrefs.HasKey("UnlockedHomesss"))
+        {
+            
+            Homes home2 = homeDB.GetHomes(0);
+            home2.homeFlag = 1;
+            Debug.Log("했다2.");
+        }
+        else
+        {
+            int unlockedHome = PlayerPrefs.GetInt("UnlockedHomesss");
+            if (unlockedHome == 7)
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    //내 코드 homeDB.home[i].homeFlag = 1;
+                    Homes home31 = homeDB.GetHomes(i);
+                    home31.homeFlag = 1;
+                    Debug.Log("모두클리어!");
+
+                }
+            }
+            else
+            {
+                Homes home210 = homeDB.GetHomes(unlockedHome);
+                home210.homeFlag = 1;
+                Debug.Log(unlockedHome + "했다3.");
+            }
+        }
+        
+        
+        //home2.homeFlag = 1;
+        /*for (int i = 0; i < unlockedHome; i++)
         {
             //내 코드 homeDB.home[i].homeFlag = 1;
             Homes home2 = homeDB.GetHomes(i);
             home2.homeFlag = 1;
 
-        }
+        }*/
     }
 
     void Start()

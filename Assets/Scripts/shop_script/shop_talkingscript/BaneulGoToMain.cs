@@ -9,6 +9,10 @@ public class BaneulGoToMain : MonoBehaviour
     public void Update()
     {
         if (Input.GetMouseButtonDown(0))
+        {
+            PlayerPrefs.SetInt("UnlockedHomesss", 4);
             SceneManager.LoadScene("MainMap_1");
+
+        }
     }
 }

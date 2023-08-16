@@ -72,6 +72,7 @@ public class HintScript_Miu : MonoBehaviour
                 if (click_obj.name == "TalkM")
                 {
                     cm.MgameIndex = 1;
+                    PlayerPrefs.SetInt("UnlockedHomesss", 1);
                     SceneManager.LoadScene("MainMap_1");
                 }
             }
