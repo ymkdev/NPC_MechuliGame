@@ -8,7 +8,7 @@ public class ShopStartButton : MonoBehaviour
     public HomesDatabase homeDB;
     public void OnMouseDown()
     {
-        //PlayerPrefs.SetInt("UnlockedHomesss", 0);
+        PlayerPrefs.SetInt("UnlockedHomesss", 0);
         for (int i = 0; i < 7; i++)
         {
             Homes home300 = homeDB.GetHomes(i);
