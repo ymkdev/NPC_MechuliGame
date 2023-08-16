@@ -17,7 +17,10 @@ public class Choose : MonoBehaviour
      {
 
      }*/
-    public static Seq_SoundManager instance;
+    // public static Seq_SoundManager instance;
+
+    
+
     public void OnClickButton()
     {
         //Debug.Log(gameObject.name + " Clicked");
@@ -25,11 +28,11 @@ public class Choose : MonoBehaviour
 
         if (clickObject.name == "YBtn") // Continue
         {
-           //
+            DialogManager.instance.Next();
         }
         else if (clickObject.name == "NBtn") // 아니아니 눌렀을 때 메인 맵으로 이동
         {
-            Destroy(instance);
+            //Destroy(instance);
             SceneManager.LoadScene("MainMap_1");
         }
     }
