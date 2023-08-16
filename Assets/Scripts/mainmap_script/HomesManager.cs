@@ -13,7 +13,7 @@ public class HomesManager : MonoBehaviour
     public SpriteRenderer artworkSprite;
     //public int flag = 0;
     public int selectedOption_home = 0;
-    //public GameObject A;
+    public GameObject A;
 
     public void Awake()
     {
@@ -33,6 +33,7 @@ public class HomesManager : MonoBehaviour
             
             Homes home2 = homeDB.GetHomes(0);
             home2.homeFlag = 1;
+            home2.homeFlag2 = 1;
             Debug.Log("했다2.");
         }
         else
@@ -40,19 +41,20 @@ public class HomesManager : MonoBehaviour
             int unlockedHome = PlayerPrefs.GetInt("UnlockedHomesss");
             if (unlockedHome == 7)
             {
-                for (int i = 0; i < 7; i++)
+              /*  for (int i = 0; i < 7; i++)
                 {
                     //내 코드 homeDB.home[i].homeFlag = 1;
                     Homes home31 = homeDB.GetHomes(i);
                     home31.homeFlag = 1;
                     Debug.Log("모두클리어!");
 
-                }
+                }*/
             }
             else
             {
                 Homes home210 = homeDB.GetHomes(unlockedHome);
                 home210.homeFlag = 1;
+                home210.homeFlag2 = 1;
                 Debug.Log(unlockedHome + "했다3.");
             }
         }
@@ -153,11 +155,11 @@ public class HomesManager : MonoBehaviour
     {
         Homes home = homeDB.GetHomes(selectedOption_home);
         artworkSprite.sprite = home.homeSprite;
-        /*if (home.homeFlag == 0)
-            A.SetActive(true);
-        else
+        if (home.homeFlag == 1 || home.homeFlag2==1)
             A.SetActive(false);
-        */
+        else
+            A.SetActive(true);
+        
     }
 
     private void Load()

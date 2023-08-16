@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ShopStartButton : MonoBehaviour
 {
-    
+    public HomesDatabase homeDB;
     public void OnMouseDown()
     {
-        PlayerPrefs.SetInt("UnlockedHomesss", 0);
+        //PlayerPrefs.SetInt("UnlockedHomesss", 0);
+        for (int i = 0; i < 7; i++)
+        {
+            Homes home300 = homeDB.GetHomes(i);
+            home300.homeFlag = 0;
+            home300.homeFlag2 = 0;
+            Debug.Log("ÃÊ±âÈ­");
+
+        }
         StartCoroutine(LoadSceneAfterDelay());
     }
 

@@ -6,4 +6,5 @@ public class Homes
 {
     public Sprite homeSprite;
     public int homeFlag;
+    public int homeFlag2;
 }
