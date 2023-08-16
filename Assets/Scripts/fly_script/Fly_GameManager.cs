@@ -79,11 +79,11 @@ public class Fly_GameManager : MonoBehaviour
         if (flag)
         {
             if (stageIndex == 0)
-                check = 1;
+                check = 5;
             else if (stageIndex == 1)
-                check = 2;
+                check = 8;
             else if (stageIndex == 2)
-                check = 3;
+                check = 10;
 
             if (check == score)
             {

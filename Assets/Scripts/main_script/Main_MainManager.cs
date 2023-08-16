@@ -52,6 +52,13 @@ public class Main_MainManager : MonoBehaviour
         }
     }
 
+    public void DestroyObj()
+    {
+        foreach (GameObject obj in DontDestroy_Objects)
+        {
+            Destroy(obj);
+        }
+    }
 
     // Update is called once per frame
     void Update()

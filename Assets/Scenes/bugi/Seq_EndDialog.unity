@@ -236,7 +236,7 @@ RectTransform:
   m_GameObject: {fileID: 309625504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 12, y: 37, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1865255264}
@@ -245,7 +245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.075195, y: 86}
+  m_AnchoredPosition: {x: 27, y: -23}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309625506
@@ -262,10 +262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     names:
-    - "\uCD94\uCD94"
     - "\uBD80\uAE30"
     sentences:
-    - "\uD78C\uD2B8\uB97C \uB2E4 \uBAA8\uC558\uB2E4!"
     - "\uB2E4 \uBC29\uBB38\uD588\uB2E4\uACE0 \uD588\uC9C0? \uC774\uC81C \uBC94\uC778
       \uB9DE\uCD94\uB7EC \uAC00\uC790!"
 --- !u!114 &309625507
@@ -344,7 +342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1291,7 +1289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: -1}
+  m_AnchoredPosition: {x: 23, y: -1}
   m_SizeDelta: {x: -201.101, y: 149.3894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376654125
@@ -1315,11 +1313,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4e4c6094d62311c4c8639e3b84614797, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1327,7 +1325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD78C\uD2B8 \uD68D\uB4DD \uD6C4 \uC2DC\uB098\uB9AC\uC624"
+  m_Text: "\uD78C\uD2B8\uB97C \uB2E4 \uBAA8\uC558\uB2E4!"
 --- !u!222 &1376654126
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1429,6 +1427,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chuchu: {fileID: 0}
   boogie: {fileID: 0}
+  startBtn: {fileID: 0}
+  YBtn: {fileID: 0}
+  NBtn: {fileID: 0}
   txtName: {fileID: 1308572045}
   txtSentence: {fileID: 1374725714}
 --- !u!1 &1462462983
@@ -1466,7 +1467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71.4, y: 55.1}
+  m_AnchoredPosition: {x: -71.4, y: 62}
   m_SizeDelta: {x: 532, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462462985
@@ -1490,11 +1491,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 6985fc3d4bd52d14d92df401f83839cc, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1502,7 +1503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBD80\uAE30"
+  m_Text: "\uCD94\uCD94"
 --- !u!222 &1462462986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1851,7 +1852,7 @@ RectTransform:
   m_GameObject: {fileID: 1740498507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.4, z: 1}
+  m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1376654124}
@@ -2065,7 +2066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1865255264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2159,6 +2160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chuchu: {fileID: 1925459004}
   boogie: {fileID: 553078651}
+  startBtn: {fileID: 309625504}
+  YBtn: {fileID: 0}
+  NBtn: {fileID: 0}
   txtName: {fileID: 1462462985}
   txtSentence: {fileID: 1376654125}
 --- !u!4 &1870988530
@@ -2272,7 +2276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1925459006
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -203,4 +203,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk2.unity
     guid: 4908021ccf41fd842bd9d79439a77425
+  - enabled: 1
   m_configObjects: {}

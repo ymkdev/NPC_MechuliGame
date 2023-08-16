@@ -52,5 +52,16 @@ public class Seq_SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (SceneManager.GetActiveScene().name == "MainMap_1")
+        //if(GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex != 6) X
+        {
+            Destroy(gameObject);
+        }
+        /*if (SceneManager.GetActiveScene().name == "Seq_Dialog_Yes")
+        //if(GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex != 6) X
+        {
+            Destroy(gameObject);
+        }*/
     }
 }
