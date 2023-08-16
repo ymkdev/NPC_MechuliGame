@@ -18,7 +18,7 @@ public class test2 : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite_DialogueBox;
     [SerializeField] private Text txt_Dialogue;
     [SerializeField] private Text txt_nametag;
-
+    public HomesDatabase homeDB;
 
     private bool isDialogue = false;
     private int count_dia = 0;
@@ -77,6 +77,11 @@ public class test2 : MonoBehaviour
                     else
                     {
                         //OnOff(false);
+                        //Homes home2 = homeDB.GetHomes(4);
+                        //shome2.homeFlag = 0;
+                        //PlayerPrefs.SetInt("UnlockedHome", PlayerPrefs.GetInt("UnlockedHome",4)+1);
+                        PlayerPrefs.SetInt("UnlockedHomesss", 6);
+                        PlayerPrefs.Save();
                         SceneManager.LoadScene("MainMap_1");
                     }
                 }

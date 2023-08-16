@@ -117,6 +117,7 @@ public class DialogManager : MonoBehaviour
         YBtn.SetActive(false);
         NBtn.SetActive(false);
         cnt = 0;
+        //
         SceneManager.LoadScene("MainMap_1");
     }
     public void Awake()
