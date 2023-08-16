@@ -14,7 +14,6 @@ public class BaneulDialogue
     public Sprite cg;
 }
 
-
 public class BaneulTalking : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer sprite_StandingCG;
@@ -22,6 +21,7 @@ public class BaneulTalking : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite_NameTag;
     [SerializeField] private Text txt_Dialogue;
     [SerializeField] private Text txt_Name;
+    [SerializeField] private BoxCollider2D dialogueBarCollider; // 대화창을 클릭할 BoxCollider2D 컴포넌트를 여기에 할당
 
     private bool isDialogue = false;
 
@@ -60,18 +60,23 @@ public class BaneulTalking : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         if (!isDialogue)
         {
-            if (Input.GetMouseButtonDown(0) && EventSystem.current.IsPointerOverGameObject())
+            if (Input.GetMouseButtonDown(0))
             {
-                if (scene.name == "BaneulTalk" && count == 3)
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
+                if (hit.collider != null && hit.collider.gameObject == dialogueBarCollider.gameObject)
                 {
-                    GameObject.Find("button").transform.Find("buttonCanvas").gameObject.SetActive(true);
-                }
-                else if (count < dialogue.Length)
-                    NextDialogue();
-                else
-                {
-                    OnOff(false);
-                    GameObject.Find("BG").transform.Find("BG2").gameObject.SetActive(true); // BG2 활성화
+                    if (scene.name == "BaneulTalk" && count == 3)
+                    {
+                        GameObject.Find("button").transform.Find("buttonCanvas").gameObject.SetActive(true);
+                    }
+                    else if (count < dialogue.Length)
+                        NextDialogue();
+                    else
+                    {
+                        OnOff(false);
+                        GameObject.Find("BG").transform.Find("BG2").gameObject.SetActive(true); // BG2 활성화
+                    }
                 }
             }
         }

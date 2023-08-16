@@ -139,31 +139,31 @@ EditorBuildSettings:
     guid: 7bc3c356e7a4996409b7b5ec4e312867
   - enabled: 0
     path: 
-    guid: 340754e63ea60474dbc98c2a0310c187
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 4c71e4e54d598dd4c9b42aa1f117ab64
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: c96ebc17c6f42f04fb7278ca0c323540
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: d7b58f0bf90228043a95b7c9e0d5dbf9
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: dcffa70341c93e14582b596fd099ee0a
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 80f8d48c381ab0747bce77f9eccb307f
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 886d53196afac234781d0f3d52d4399b
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 131d8ddb28fd17946a737fe867f48689
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
-    guid: 0b70ea824da97ca409bb9446b4be1fd2
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/fly/HintScene.unity
     guid: 6ee80f08701c07c43bcd0708b43da8fb
@@ -203,5 +203,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/shop/shopping_Scenes/BaneultalkingScenes/BaneulTalk2.unity
     guid: 4908021ccf41fd842bd9d79439a77425
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/startPart/StartGameRule.unity
+    guid: a633711cd97de284d8733f98b917e962
   m_configObjects: {}
