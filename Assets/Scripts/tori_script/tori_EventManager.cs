@@ -71,7 +71,7 @@ public class tori_EventManager : MonoBehaviour
         }
 
         //콘솔 결과 확인
-        Debug.Log("당근 개수: " +  sum);
+        Debug.Log("당근 개수: " + sum);
     }
 
 
@@ -166,11 +166,11 @@ public class tori_EventManager : MonoBehaviour
     //게임 종료
     public void GameExit()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
-        #else
-                Application.Quit();
-        #endif
+#else
+        Application.Quit();
+#endif
     }
 
 
