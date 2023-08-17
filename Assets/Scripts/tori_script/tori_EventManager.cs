@@ -20,13 +20,22 @@ public class tori_EventManager : MonoBehaviour
     private int game_level = 0; //게임 레벨
     public GameObject[] level = new GameObject[3]; //레벨이미지
 
+    public GameObject replay_bg; //게임 종료 배경
+    public GameObject replay_success; //게임 성공
+    public GameObject replay_fail;//게임 실패
+
     void Start()
     {
+        replay_bg.SetActive(false);
+        replay_success.SetActive(false);
+        replay_fail.SetActive(false);
+
         CarrotView();
 
         //성공.실패 이미지 비활성화
         success_state = false;
         failure_state = false;
+
         //토끼 이미지 활성화
         rabbit_state = true;
         Success.SetActive(success_state);
@@ -133,6 +142,11 @@ public class tori_EventManager : MonoBehaviour
         Invoke("Start", 3);
     }
 
+    public void ReplayButtonClick()
+    {
+        Start();
+    }
+
     //게임 레벨
     public void GameLevel()
     {
@@ -154,10 +168,16 @@ public class tori_EventManager : MonoBehaviour
 
         //게임 종료
         if (game_level == 4)
-        {
-            GameExit();
-            Debug.Log("게임 종료");
-            SceneManager.LoadScene("tori_End");
+        {   
+            if(game_success_count != 3)
+            {
+                replay_bg.SetActive(true);
+                replay_fail.SetActive(true);
+                /*
+                GameExit();
+                Debug.Log("게임 종료");
+                SceneManager.LoadScene("tori_End");*/
+            }
 
         }
 
