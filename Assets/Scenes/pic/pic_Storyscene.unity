@@ -910,12 +910,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 4e4c6094d62311c4c8639e3b84614797, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 50
+    m_MinSize: 0
+    m_MaxSize: 80
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1175,8 +1175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -273, y: -182}
-  m_SizeDelta: {x: 500, y: 60}
+  m_AnchoredPosition: {x: -279, y: -177.01}
+  m_SizeDelta: {x: 523, y: 69.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828180973
 MonoBehaviour:
@@ -1199,7 +1199,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 6985fc3d4bd52d14d92df401f83839cc, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1508,10 +1508,10 @@ MonoBehaviour:
       \uC904\uAC8C!"
     name: "\uB2F9\uADFC\uC774"
     cg: {fileID: 21300000, guid: 1e67b10ff8485e94aaaa039a3a0f86e3, type: 3}
-  - dialogue: "\uAC8C\uC784\uC740 \uCD1D 2\uB808\uBCA8\uAE4C\uC9C0 \uC788\uACE0,\n\uCC98\uC74C
-      \uBCF4\uC774\uB294 \uCE74\uB4DC\uB97C \uC798 \uAE30\uC5B5\uD574\uB450\uC5C8\uB2E4\uAC00\n\uC2DC\uAC04
-      \uB0B4\uC5D0 \uBAA8\uB4E0 \uC9DD\uC744 \uB2E4 \uB9DE\uCD94\uBA74 \uB418\uB294
-      \uAC8C\uC784\uC774\uC57C"
+  - dialogue: "\uAC8C\uC784\uC740 \uCD1D 2\uB808\uBCA8\uAE4C\uC9C0 \uC788\uACE0,
+      \uCC98\uC74C \uBCF4\uC774\uB294 \uCE74\uB4DC\uB97C \uC798 \uAE30\uC5B5\uD574\uB450\uC5C8\uB2E4\uAC00
+      \n\uC2DC\uAC04 \uB0B4\uC5D0 \uBAA8\uB4E0 \uC9DD\uC744 \uB2E4 \uB9DE\uCD94\uBA74
+      \uB418\uB294 \uAC8C\uC784\uC774\uC57C"
     name: "\uB2F9\uADFC\uC774"
     cg: {fileID: 21300000, guid: 1e67b10ff8485e94aaaa039a3a0f86e3, type: 3}
   - dialogue: "\uC81C\uD55C \uC2DC\uAC04\uC774 \uB2E4 \uC9C0\uB098\uBA74 \uC2E4\uD328,

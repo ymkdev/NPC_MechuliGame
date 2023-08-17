@@ -12,8 +12,10 @@ public class Main_SoundManager : MonoBehaviour
     public AudioClip[] bgm_clips;
     AudioSource bgm_player;
     public GameObject soundX;
+    public GameObject bgmX;
 
     public Slider sfx_slider;
+    public Slider bgm_slider;
 
     public void Awake()
     {
@@ -24,12 +26,9 @@ public class Main_SoundManager : MonoBehaviour
         sfx_slider.onValueChanged.AddListener(ChangeSfxSound);
 
         bgm_player = GameObject.Find("Bgm Player").GetComponent<AudioSource>();
-    }
 
-    //private void Start()
-    //{
-    //    PlayBGMForMiniGame(0);
-    //}
+        bgm_slider.onValueChanged.AddListener(ChangeBgmSound);
+    }
 
     private void Update()
     {
@@ -71,7 +70,13 @@ public class Main_SoundManager : MonoBehaviour
 
     void ChangeBgmSound(float value)
     {
-        
+        bgm_player.volume = value;
+        if (bgm_player.volume <= 0)
+        {
+            bgmX.SetActive(true);
+        }
+        else
+            bgmX.SetActive(false);
     }
 
     void ChangeSfxSound(float value)
