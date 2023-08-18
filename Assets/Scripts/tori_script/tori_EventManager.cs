@@ -23,12 +23,16 @@ public class tori_EventManager : MonoBehaviour
     public GameObject replay_bg; //게임 종료 배경
     public GameObject replay_success; //게임 성공
     public GameObject replay_fail;//게임 실패
+    public GameObject replay_btn;//게임 실패 버튼
+    public GameObject comfirmed_btn;//게임 성공 버튼
 
     void Start()
     {
         replay_bg.SetActive(false);
         replay_success.SetActive(false);
         replay_fail.SetActive(false);
+        replay_btn.SetActive(false);
+        comfirmed_btn.SetActive(false);
 
         CarrotView();
 
@@ -149,6 +153,13 @@ public class tori_EventManager : MonoBehaviour
         Start();
     }
 
+    public void ComfirmedButtonClick()
+    {
+        game_level = 0;
+        game_success_count = 0;
+        SceneManager.LoadScene("tori_End");
+    }
+
     //게임 레벨
     public void GameLevel()
     {
@@ -175,12 +186,15 @@ public class tori_EventManager : MonoBehaviour
             {
                 replay_bg.SetActive(true);
                 replay_fail.SetActive(true);
-                /*
-                GameExit();
-                Debug.Log("게임 종료");
-                SceneManager.LoadScene("tori_End");*/
+                replay_btn.SetActive(true);
             }
 
+            else if(game_success_count == 3)
+            {
+                replay_bg.SetActive(true);
+                replay_success.SetActive(true);
+                comfirmed_btn.SetActive(true);
+            }
         }
 
     }
