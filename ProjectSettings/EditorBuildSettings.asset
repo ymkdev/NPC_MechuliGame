@@ -80,6 +80,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tori/tori_End.unity
     guid: 6a7a85cb616b18647b096f98411ca497
+  - enabled: 1
+    path: Assets/Scenes/tori/tori_End1.unity
+    guid: f6bbfb542ba705a468355ba26de645b2
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

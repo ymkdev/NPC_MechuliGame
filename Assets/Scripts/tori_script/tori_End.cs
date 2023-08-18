@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class tori_End : MonoBehaviour
 {
@@ -8,11 +9,6 @@ public class tori_End : MonoBehaviour
     public GameObject hintGetBtn;
     public GameObject hintBox;
     public GameObject toriHint;
-
-    void Start()
-    {
-
-    }
 
     //ÈùÆ® È¹µæ ¹öÆ° Å¬¸¯½Ã
     public void HintGetButtonClick()
@@ -33,11 +29,6 @@ public class tori_End : MonoBehaviour
         hintGetBtn.SetActive(false);
         hintBox.SetActive(false);
         toriHint.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneManager.LoadScene("tori_End1");
     }
 }
