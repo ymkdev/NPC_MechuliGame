@@ -28,7 +28,10 @@ public class Ending : MonoBehaviour
             End_Success.SetActive(true);
             End_Fail.SetActive(false);
             if (!(End1.activeSelf) && !(End2_1.activeSelf) && !(End2_2.activeSelf) && !(End3.activeSelf))
+            {
                 GameObject.Find("SoundManager").GetComponent<Main_SoundManager>().PlaySound("Success");
+                Main_SoundManager.instance.PlayBGMForMiniGame(10);
+            }
         }
         else //if (CriminalClick.rslt == false)
         {
@@ -36,7 +39,10 @@ public class Ending : MonoBehaviour
             End_Success.SetActive(false);
             End_Fail.SetActive(true);
             if (!(End1.activeSelf) && !(End2_1.activeSelf) && !(End2_2.activeSelf) && !(End3.activeSelf))
+            {
                 GameObject.Find("SoundManager").GetComponent<Main_SoundManager>().PlaySound("Fail");
+                Main_SoundManager.instance.PlayBGMForMiniGame(9);
+            }
         }
 
     }
@@ -62,6 +68,7 @@ public class Ending : MonoBehaviour
             End1.SetActive(true);
             End_Success.SetActive(false);
             sceneCount = sceneCount + 1;
+            Main_SoundManager.instance.PlayBGMForMiniGame(11);
         }
         // crime fail
         if (clickObject.name == "End_RetryBtn") // retry
@@ -80,6 +87,7 @@ public class Ending : MonoBehaviour
             End_Fail.SetActive(false);
             //Debug.Log(End_Fail.activeSelf);
             //End_Success.SetActive(false);
+            Main_SoundManager.instance.PlayBGMForMiniGame(11);
         }
 
         // ending scene

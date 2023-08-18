@@ -150,7 +150,7 @@ public class Main_UIClick : MonoBehaviour
 
     public void SoundBtnClick()
     {
-        
+        TimePause();
         Debug.Log("소리 버튼 클릭");
         Box[2].SetActive(true);
         Debug.Log(Box[2]);
