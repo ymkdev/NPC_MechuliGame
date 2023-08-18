@@ -21,6 +21,7 @@ public class tori_EventManager : MonoBehaviour
     public GameObject[] level = new GameObject[3]; //레벨이미지
 
     public GameObject replay_bg; //게임 종료 배경
+    public GameObject replay_bg1; //게임 종료 배경1
     public GameObject replay_success; //게임 성공
     public GameObject replay_fail;//게임 실패
     public GameObject replay_btn;//게임 실패 버튼
@@ -29,6 +30,7 @@ public class tori_EventManager : MonoBehaviour
     void Start()
     {
         replay_bg.SetActive(false);
+        replay_bg1.SetActive(false);
         replay_success.SetActive(false);
         replay_fail.SetActive(false);
         replay_btn.SetActive(false);
@@ -185,6 +187,7 @@ public class tori_EventManager : MonoBehaviour
             if(game_success_count != 3)
             {
                 replay_bg.SetActive(true);
+                replay_bg1.SetActive(true);
                 replay_fail.SetActive(true);
                 replay_btn.SetActive(true);
             }
@@ -192,6 +195,7 @@ public class tori_EventManager : MonoBehaviour
             else if(game_success_count == 3)
             {
                 replay_bg.SetActive(true);
+                replay_bg1.SetActive(true);
                 replay_success.SetActive(true);
                 comfirmed_btn.SetActive(true);
             }

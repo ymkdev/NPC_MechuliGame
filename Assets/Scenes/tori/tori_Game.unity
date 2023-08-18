@@ -991,6 +991,7 @@ MonoBehaviour:
   - {fileID: 1045499084}
   - {fileID: 1129451732}
   replay_bg: {fileID: 1651112591}
+  replay_bg1: {fileID: 66455606}
   replay_success: {fileID: 696793200}
   replay_fail: {fileID: 781484452}
   replay_btn: {fileID: 483684502}
@@ -3547,31 +3548,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c506700e148a74f9ace006e3a43bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Success: {fileID: 0}
-  Failure: {fileID: 0}
-  Rabbit: {fileID: 0}
+  Success: {fileID: 2114254224}
+  Failure: {fileID: 1382205582}
+  Rabbit: {fileID: 1519562960}
   Carrot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1285757691}
+  - {fileID: 1672296688}
+  - {fileID: 1483676241}
+  - {fileID: 223766858}
+  - {fileID: 2065336177}
+  - {fileID: 1249779948}
+  - {fileID: 987620911}
+  - {fileID: 1612894995}
+  - {fileID: 1883780009}
+  - {fileID: 1254572682}
+  - {fileID: 2135206964}
+  - {fileID: 1234910263}
   level:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  replay_bg: {fileID: 0}
-  replay_success: {fileID: 0}
-  replay_fail: {fileID: 0}
-  replay_btn: {fileID: 0}
-  comfirmed_btn: {fileID: 0}
+  - {fileID: 1973669650}
+  - {fileID: 1045499084}
+  - {fileID: 1129451732}
+  replay_bg: {fileID: 1651112591}
+  replay_bg1: {fileID: 66455606}
+  replay_success: {fileID: 696793200}
+  replay_fail: {fileID: 781484452}
+  replay_btn: {fileID: 483684502}
+  comfirmed_btn: {fileID: 1706577019}
 --- !u!1 &1346819299
 GameObject:
   m_ObjectHideFlags: 0

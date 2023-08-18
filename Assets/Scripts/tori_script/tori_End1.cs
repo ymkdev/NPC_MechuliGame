@@ -26,6 +26,7 @@ public class tori_End1 : MonoBehaviour, IPointerDownHandler
         if (dialogue_count == 2)
         {
             Debug.Log("대화 종료");
+            PlayerPrefs.SetInt("UnlockedHomesss", 6);
             SceneManager.LoadScene("MainMap_1");
         }
 
