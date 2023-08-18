@@ -144,6 +144,8 @@ public class tori_EventManager : MonoBehaviour
 
     public void ReplayButtonClick()
     {
+        game_level = 0;
+        game_success_count = 0;
         Start();
     }
 
