@@ -29,6 +29,8 @@ public class tori_EventManager : MonoBehaviour
 
     void Start()
     {
+        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 5;
+
         replay_bg.SetActive(false);
         replay_bg1.SetActive(false);
         replay_success.SetActive(false);

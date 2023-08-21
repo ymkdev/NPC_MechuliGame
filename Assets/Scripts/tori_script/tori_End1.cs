@@ -28,8 +28,10 @@ public class tori_End1 : MonoBehaviour, IPointerDownHandler
             Debug.Log("대화 종료");
             PlayerPrefs.SetInt("UnlockedHomesss", 6);
             SceneManager.LoadScene("MainMap_1");
+            dialogue_count = 0;
         }
 
+        
         ScriptText_dialogue.text = dialogue[dialogue_count];
 
         //토리 이미지 활성화
