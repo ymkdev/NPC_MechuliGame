@@ -21,6 +21,7 @@ public class tori_End : MonoBehaviour
     public void HintBoxClick()
     {
         toriHint.SetActive(true);
+        Main_MainManager.Instance.ClearStage(6);
     }
 
     //힌트 클릭시
